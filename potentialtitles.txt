@@ -1,0 +1,5 @@
+What is the relationship between the damping coefficient of a spring-mass oscillator submerged in different liquids and the densities of the liquids?
+
+OR
+
+How accurately can Stoke's law estimate the damping coefficient of a spring-mass simple harmonic oscillator submerged in a liquid?
