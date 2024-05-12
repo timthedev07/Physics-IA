@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  9 MAY 2024 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  12 MAY 2024 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -660,28 +660,28 @@ Package cleveref Info: `amsthm' support loaded on input line 3026.
 )
 \@quotelevel=\count445
 \@quotereset=\count446
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 90.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 91.
  (./Xiyu Bao Physics HL Internal Assessment.aux)
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
@@ -712,12 +712,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"Xiyu Bao Physics HL Internal Assessment".bbl' found.
  (./Xiyu Bao Physics HL Internal Assessment.bbl)
-Package biblatex Info: Reference section=0 on input line 90.
-Package biblatex Info: Reference segment=0 on input line 90.
+Package biblatex Info: Reference section=0 on input line 91.
+Package biblatex Info: Reference segment=0 on input line 91.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 90.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 91.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count447
@@ -754,7 +754,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \oddsidemargin=-1.13809pt
 * \evensidemargin=-1.13809pt
 * \topmargin=-8.09244pt
-* \headheight=12.0pt
+* \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -771,7 +771,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 90.
+Package hyperref Info: Link coloring ON on input line 91.
 (./Xiyu Bao Physics HL Internal Assessment.out) (./Xiyu Bao Physics HL Internal Assessment.out)
 \@outlinefile=\write4
 \openout4 = `"Xiyu Bao Physics HL Internal Assessment.out"'.
@@ -780,7 +780,19 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  [1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Xiyu Bao Physics HL Internal Assessment.toc)
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Xiyu Bao Physics HL Internal Assessment.toc
+LaTeX Font Info:    Trying to load font information for U+esvect on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/esvect/uesvect.fd
+File: uesvect.fd 
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write5
 \openout5 = `"Xiyu Bao Physics HL Internal Assessment.toc"'.
 
@@ -788,46 +800,34 @@ Package caption Info: End \AtBeginDocument code.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 
+l.120 
        [1]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 
+l.158 
        [1
 
-]
-
-LaTeX Warning: Empty bibliography on input line 131.
-
-(./Xiyu Bao Physics HL Internal Assessment.aux)
+] [2] (./Xiyu Bao Physics HL Internal Assessment.aux)
 Package rerunfilecheck Info: File `"Xiyu Bao Physics HL Internal Assessment".out' has not changed.
-(rerunfilecheck)             Checksum: FF0C94A7DAE52A59DF3477B1B3188CC9;287.
+(rerunfilecheck)             Checksum: 398A95F51D8EC3421F4B529DBE631E25;2252.
 Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessment".run.xml'.
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25831 strings out of 476025
- 511535 string characters out of 5790016
- 1852388 words of memory out of 5000000
- 46036 multiletter control sequences out of 15000+600000
- 514148 words of font info for 38 fonts, out of 8000000 for 9000
+ 25919 strings out of 476025
+ 512986 string characters out of 5790016
+ 1857388 words of memory out of 5000000
+ 46085 multiletter control sequences out of 15000+600000
+ 519057 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,11n,68p,759b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb>
-Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (3 pages, 40490 bytes).
+Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (4 pages, 55339 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 25 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 125 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
