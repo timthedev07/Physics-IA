@@ -1,4 +1,4 @@
 {
-  "python.defaultInterpreterPath": "analysis/venv/bin/python3.12",
+  "python.defaultInterpreterPath": "./model/venv/bin/python3.12",
   "discord.enabled": true
 }
