@@ -83,7 +83,7 @@
       <file>"Xiyu Bao Physics HL Internal Assessment".bcf</file>
     </requires>
     <requires type="editable">
-      <file>References.bib</file>
+      <file>Physics.bib</file>
     </requires>
   </external>
 </requests>

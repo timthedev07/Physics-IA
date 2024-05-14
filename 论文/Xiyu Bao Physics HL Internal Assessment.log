@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  13 MAY 2024 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  14 MAY 2024 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -805,29 +805,32 @@ l.120
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 
-       [1
+l.141 M
+       oreover, the motion of the oscillator is modeled by the following dif... [1
 
-] [2] (./Xiyu Bao Physics HL Internal Assessment.aux)
+] [2] [3] (./Xiyu Bao Physics HL Internal Assessment.aux)
 Package rerunfilecheck Info: File `"Xiyu Bao Physics HL Internal Assessment".out' has not changed.
-(rerunfilecheck)             Checksum: 398A95F51D8EC3421F4B529DBE631E25;2252.
+(rerunfilecheck)             Checksum: 8172E128525F5319FCD56598E805DDF2;2036.
 Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessment".run.xml'.
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25919 strings out of 476025
- 512986 string characters out of 5790016
- 1857388 words of memory out of 5000000
- 46085 multiletter control sequences out of 15000+600000
- 519057 words of font info for 59 fonts, out of 8000000 for 9000
+ 26140 strings out of 476025
+ 517439 string characters out of 5790016
+ 1858388 words of memory out of 5000000
+ 46303 multiletter control sequences out of 15000+600000
+ 519404 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,11n,68p,759b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb>
-Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (4 pages, 53974 bytes).
+ 63i,12n,68p,759b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{cite.0@miller_2004_13} has been referenced but does not exist, replaced by a fixed one
+
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (5 pages, 120464 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

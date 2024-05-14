@@ -2,7 +2,7 @@
 \usepackage{setspace}
 \doublespacing
 \usepackage[backend=biber,style=apa]{biblatex}
-\addbibresource{References.bib}
+\addbibresource{Physics.bib}
 \usepackage{sectsty}
 \usepackage{siunitx}
 \usepackage{graphicx}
@@ -128,25 +128,55 @@ This essay extends the investigation of simple harmonic motion by studying the d
 
 \subsection{The Research Question}
 What is the relationship between the mass of a damped spring-block oscillator and the damping ratio?
+
 \subsection{Background Information}
+An ideal and rather theoretical spring-mass system oscillates indefinitely, producing an ongoing sine or cosine curve. In reality, there will be a damping force that can be as minimally consequential as air resistance or as observable as viscous drag in a liquid. Anyway, energy is dissipated to the surroundings and hence the amplitude will gradually decrease until the oscillation stops.
+
+The extent to which the viscous drag force, modeled by Stoke's law, diminishes the oscillatory motion submerged in water depends on the mass of the oscillator. This investigation delves into the relationship between the independent variable of mass $m$, and the dependent variable of the damping ratio $\zeta$. The mass set used in the system consists of spheres of equal radii but different densities.
+
+Stoke's law determines the drag force acting upon an object traveling through a fluid. It is proportional to the object's velocity and is given by the following per the Physics Data Booklet
+$$F_d = 6\pi r \eta v$$
+This law holds iff. the object speed is low such that the flow to be \textit{laminar}, and the object is \textit{spherical}.
+
+Moreover, the motion of the oscillator is modeled by the following differential equation, with the damping force proportional to velocity \parencite{miller_2004_13}:
+$$m\ddot{x}(t) + b\dot{x}(t) + kx(t) = 0$$
+The damping ratio $\zeta$ is defined as the ratio of the damping coefficient to the critical damping coefficient. That is $$\zeta = \frac{b}{2mw_0}$$
+where $w_0$ is the natural frequency of the system
+\begin{align*}
+  w_0 & = \sqrt{\frac{k}{m}} \\
+\end{align*}
+
 \subsection{Hypothesis}
+
+Suppose that the constant of proportionality of the damping force with speed is given by $b = 6\pi r \eta$, per Stoke's law. Then
+\begin{align*}
+  6\pi r \eta            & = 2\zeta \sqrt{mk}            \\
+  9\pi^2 r^2 \eta^2      & = \zeta^2mk                   \\
+  \frac{\zeta^2}{m^{-1}} & = \frac{9\pi^2 r^2 \eta^2}{k}
+\end{align*}
+This suggests that, for a fixed sphere radius $r$ and viscosity $\eta$, the $$\zeta^2 \propto m^{-1}$$
+Equivalently, the $\zeta^2/m^{-1}$ graph is ideally a straight line, although not necessarily through the origin, as there may exist systematic errors.
+
+
+
+\section{Research Design}
+
 \subsection{Variables}
 
-\section{Main Dody}
+\subsection{Apparatus and Materials}
+vernier callipers
 
-\subsection{Data Collection}
+\subsection{Methodology}
 
-\subsubsection{Apparatus and Materials}
+\subsection{Risk Assessment}
 
-\subsubsection{Procedures and Reproducing the Experiment}
+\section{Results}
 
-\subsubsection{Risk Assessment}
+\subsection{Raw Data}
 
 \subsection{Data Processing}
 
-\subsection{Data Analysis}
-
-\subsubsection{Uncertainty Analysis}
+\subsection{Analysis and Interpretation}
 
 \section{Conclusion}
 

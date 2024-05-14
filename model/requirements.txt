@@ -13,4 +13,4 @@ pytz==2024.1
 six==1.16.0
 tzdata==2024.1
 opencv-python==4.9.0.80
-
+scipy==1.13.0
