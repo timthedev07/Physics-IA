@@ -21,6 +21,7 @@
 \usepackage{setspace}
 \newtheorem{lemma}{Lemma}
 \newtheorem{proposition}{Proposition}
+\newtheorem{assumption}{Assumption}
 \doublespacing
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 \let\oldsi\si
@@ -85,6 +86,7 @@
 \newcommand{\pair}[2]{\paren{#1,\, #2}}
 \usepackage{cleveref}
 \crefname{lemma}{Lemma}{Lemmas}
+\crefname{assumption}{Assumption}{Assumptions}
 \crefname{proposition}{Proposition}{Propositions}
 \setlength{\headheight}{15pt}
 
@@ -138,12 +140,21 @@ Stoke's law determines the drag force acting upon an object traveling through a 
 $$F_d = 6\pi r \eta v$$
 This law holds iff. the object speed is low such that the flow to be \textit{laminar}, and the object is \textit{spherical}.
 
+\begin{assumption}
+  \label{as:1}
+  The damping force is the viscous drag force.
+\end{assumption}
+
 Moreover, the motion of the oscillator is modeled by the following differential equation, with the damping force proportional to velocity \parencite{miller_2004_13}:
-$$m\ddot{x}(t) + b\dot{x}(t) + kx(t) = 0$$
-The damping ratio $\zeta$ is defined as the ratio of the damping coefficient to the critical damping coefficient. That is $$\zeta = \frac{b}{2mw_0}$$
+\begin{equation}
+  \label{eq:1}
+  m\ddot{x}(t) + b\dot{x}(t) + kx(t) = 0
+\end{equation}
+The damping ratio $\zeta$ is defined as the ratio of the damping coefficient to the critical damping coefficient --- the damping coefficient when the system returns to equilibrium without completing an oscillation. That is $$\zeta = \frac{b}{c_c} = \frac{b}{2mw_0}$$
 where $w_0$ is the natural frequency of the system
 \begin{align*}
-  w_0 & = \sqrt{\frac{k}{m}} \\
+  w_0            & = \sqrt{\frac{k}{m}}   \\
+  \implies \zeta & = \frac{b}{2\sqrt{mk}}
 \end{align*}
 
 \subsection{Hypothesis}
@@ -154,10 +165,19 @@ Suppose that the constant of proportionality of the damping force with speed is 
   9\pi^2 r^2 \eta^2      & = \zeta^2mk                   \\
   \frac{\zeta^2}{m^{-1}} & = \frac{9\pi^2 r^2 \eta^2}{k}
 \end{align*}
-This suggests that, for a fixed sphere radius $r$ and viscosity $\eta$, the $$\zeta^2 \propto m^{-1}$$
-Equivalently, the $\zeta^2/m^{-1}$ graph is ideally a straight line, although not necessarily through the origin, as there may exist systematic errors.
+\begin{proposition}
+  \label{prop:1}
+  For a fixed sphere radius $r$ and viscosity $\eta$, \begin{equation}\label{eq:2}
+    \zeta^2 \propto m^{-1}
+  \end{equation}
+  Equivalently, the graph $\zeta^2/m^{-1}$ is ideally a straight line, although not necessarily passing through the origin, as some form of systematic errors are expected.
+\end{proposition}
 
-
+\cref{prop:1} has a few dependencies that may affect its accuracy. It relies on \cref{as:1}, which, in turn, requires that the flow is laminar. This is a reasonable assumption given that the spheres are relatively small, and the speed is low; the potential for turbulence is insignificant and even if present, the impact is minimal. Furthermore, the buoyancy force on the object
+$$F_b = \rho g V$$
+is always present but is not modeled in the differential equation at \cref{eq:1}. Notwithstanding, the absence of considerations of buoyancy has negligible impact on precision. The setup involves spheres of radius $2.5\si{\cm}$ and water of density $997\si{\kg\per\m\cubed}$, then
+$$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{\N}$$
+\pagebreak
 
 \section{Research Design}
 

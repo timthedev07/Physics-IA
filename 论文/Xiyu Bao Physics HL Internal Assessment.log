@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  14 MAY 2024 23:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  14 MAY 2024 23:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -622,16 +622,17 @@ Package: esdiff
 )
 \c@lemma=\count441
 \c@proposition=\count442
+\c@assumption=\count443
  (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip81
 \enit@outerparindent=\dimen179
 \enit@toks=\toks32
 \enit@inbox=\box66
-\enit@count@id=\count443
-\enitdp@description=\count444
+\enit@count@id=\count444
+\enitdp@description=\count445
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 44.
+Package hyperref Info: Option `colorlinks' set `true' on input line 45.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip82
@@ -658,30 +659,30 @@ LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
 )
-\@quotelevel=\count445
-\@quotereset=\count446
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 91.
+\@quotelevel=\count446
+\@quotereset=\count447
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 93.
  (./Xiyu Bao Physics HL Internal Assessment.aux)
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
@@ -712,24 +713,24 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"Xiyu Bao Physics HL Internal Assessment".bbl' found.
  (./Xiyu Bao Physics HL Internal Assessment.bbl)
-Package biblatex Info: Reference section=0 on input line 91.
-Package biblatex Info: Reference segment=0 on input line 91.
+Package biblatex Info: Reference section=0 on input line 93.
+Package biblatex Info: Reference segment=0 on input line 93.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 91.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 93.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count447
+\scratchcounter=\count448
 \scratchdimen=\dimen180
 \scratchbox=\box67
-\nofMPsegments=\count448
-\nofMParguments=\count449
+\nofMPsegments=\count449
+\nofMParguments=\count450
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count450
+\MPscratchCnt=\count451
 \MPscratchDim=\dimen181
-\MPnumerator=\count451
-\makeMPintoPDFobject=\count452
+\MPnumerator=\count452
+\makeMPintoPDFobject=\count453
 \everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -771,7 +772,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 91.
+Package hyperref Info: Link coloring ON on input line 93.
 (./Xiyu Bao Physics HL Internal Assessment.out) (./Xiyu Bao Physics HL Internal Assessment.out)
 \@outlinefile=\write4
 \openout4 = `"Xiyu Bao Physics HL Internal Assessment.out"'.
@@ -800,15 +801,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.120 
+l.122 
        [1]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.141 M
-       oreover, the motion of the oscillator is modeled by the following dif... [1
+l.144   \label
+              {as:1} [1
 
-] [2] [3] (./Xiyu Bao Physics HL Internal Assessment.aux)
+] [2]
+
+Package siunitx Info: Option "per-mode = reciprocal-positive-first" has been
+(siunitx)             deprecated in this release.
+(siunitx)             
+(siunitx)             Use "per-mode = power-positive-first" as a replacement.
+
+ [3] [4] (./Xiyu Bao Physics HL Internal Assessment.aux)
 Package rerunfilecheck Info: File `"Xiyu Bao Physics HL Internal Assessment".out' has not changed.
 (rerunfilecheck)             Checksum: 8172E128525F5319FCD56598E805DDF2;2036.
 Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessment".run.xml'.
@@ -816,21 +824,21 @@ Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessme
 
  ) 
 Here is how much of TeX's memory you used:
- 26140 strings out of 476025
- 517439 string characters out of 5790016
- 1858388 words of memory out of 5000000
- 46303 multiletter control sequences out of 15000+600000
+ 26185 strings out of 476025
+ 518341 string characters out of 5790016
+ 1859388 words of memory out of 5000000
+ 46343 multiletter control sequences out of 15000+600000
  519404 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,12n,68p,759b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,12n,83p,759b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{cite.0@miller_2004_13} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (5 pages, 120464 bytes).
+Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (6 pages, 128895 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
