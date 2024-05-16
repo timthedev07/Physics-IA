@@ -22,7 +22,7 @@ K = 10  # to be changed
 R = 2.5 / 100
 RError = 0.05 / 100
 η = 0.85
-mError = 0.005 / 1000
+mError = 0.005  # unit is gram
 peakError = 0.5 / 1000
 
 
@@ -74,14 +74,14 @@ def processData():
     df = readCSV()
     df.reset_index()
 
-    masses = df["Mass"]
-
     # df = addTimes(df)
     df["Damping Ratio"] = df.apply(
         avgDampingRatio,
         axis=1,
     )
     df = df.sort_values("Mass")
+    df["Mass Reciprocal"] = df.apply(lambda row: 1 / (row["Mass"] / 1000), axis=1)
+    df["Zeta Squared"] = df.apply(lambda x: x["Damping Ratio"] ** 2, axis=1)
     return df
 
 
@@ -89,14 +89,13 @@ def main():
     plt.figure()
 
     # config
-    plt.xlabel(r"m (\si{\kilo\g})")
-    plt.ylabel(r"$\zeta$ (unitless ratio)")
-    plt.margins(x=2, y=0.2)
+    plt.xlabel(r"$m^{-1}$ (\si{\per\kilo\g})")
+    plt.ylabel(r"$\zeta^2$ (unitless ratio)")
 
     # prepare data
     df = processData()
-    x = df["Mass"]
-    y = df["Damping Ratio"]
+    x = df["Mass Reciprocal"]
+    y = df["Zeta Squared"]
     m, b = np.polyfit(x, y, 1)
     endpoint = x.max()
     x_1 = np.linspace(0, endpoint, 2)
@@ -104,14 +103,16 @@ def main():
 
     # scatter plot
     plt.scatter(x, y)
+    plt.errorbar(x, y, xerr=mError)
 
     # # plot the line of best fit
-    # (bf,) = plt.plot(x_1, y_1, label="Best fit line")
+    (bf,) = plt.plot(x_1, y_1, label="Best fit line")
 
     # plot the expected line
     (th,) = plt.plot(
         [0, endpoint],
         [0, endpoint * expectedGradient()],
+        "--",
         label="Stoke's Law Prediction",
     )
 

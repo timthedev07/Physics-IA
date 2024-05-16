@@ -689,6 +689,18 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
@@ -926,6 +938,11 @@ OUTPUT Xiyu Bao Physics HL Internal Assessment.toc
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsl12.tfm
+INPUT ./figs/setup.png
+INPUT ./figs/setup.png
+INPUT figs/setup.png
+INPUT ./figs/setup.png
+INPUT ./figs/setup.png
 INPUT Xiyu Bao Physics HL Internal Assessment.aux
 INPUT ./Xiyu Bao Physics HL Internal Assessment.out
 INPUT ./Xiyu Bao Physics HL Internal Assessment.out

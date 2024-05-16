@@ -12,6 +12,8 @@
 \usepackage{esvect}
 \usepackage{amsthm}
 \usepackage{hyperref}
+\usepackage{array} % for defining a new column type
+\usepackage{varwidth} %for the varwidth minipage environment
 \usepackage{float}
 \usepackage{amssymb}
 \usepackage{outlines}
@@ -89,6 +91,7 @@
 \crefname{assumption}{Assumption}{Assumptions}
 \crefname{proposition}{Proposition}{Propositions}
 \setlength{\headheight}{15pt}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
 \begin{document}
 
@@ -101,7 +104,7 @@
   \begin{center}
     \vspace*{3cm}
 
-    \textbf{\Large  {What is the relationship between the mass of a damped spring-block oscillator and the damping ratio?}}
+    {\textbf{\Large{What is the relationship between the mass of a damped spring-block oscillator and the damping ratio?}}}
 
     \vspace{1cm}
     \large{Physics HL}\\
@@ -136,8 +139,8 @@ An ideal and rather theoretical spring-mass system oscillates indefinitely, prod
 
 The extent to which the viscous drag force, modeled by Stoke's law, diminishes the oscillatory motion submerged in water depends on the mass of the oscillator. This investigation delves into the relationship between the independent variable of mass $m$, and the dependent variable of the damping ratio $\zeta$. The mass set used in the system consists of spheres of equal radii but different densities.
 
-Stoke's law determines the drag force acting upon an object traveling through a fluid. It is proportional to the object's velocity and is given by the following per the Physics Data Booklet
-$$F_d = 6\pi r \eta v$$
+Stoke's law determines the drag force acting upon an object traveling through a fluid. It is proportional to the object's velocity and is given by the following per the Physics Data Booklet, in Newtons
+$$F_d = 6\pi r \eta v $$
 This law holds iff. the object speed is low such that the flow to be \textit{laminar}, and the object is \textit{spherical}.
 
 \begin{assumption}
@@ -182,9 +185,39 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
 \section{Research Design}
 
 \subsection{Variables}
+\begin{center}
+  \begin{tabular}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
+    \hline
+    \multicolumn{2}{|c}{Variables} & \multicolumn{1}{|c}{Explanation} & \multicolumn{1}{|c|}{Measurement}                                                                                                                                                                                                                                       \\  \hline
+    Independent                    & Mass $m$                         & The masses of the spherical metal bobs                                                                                                                                           & Measured using an electric balance, to two d.p. with uncertainty $\pm 0.005 \si{\g}$ \\
+    \hline
+    Dependent                      & Peak Amplitude                   & At least 5 consecutive peaks, if the oscillation does not stop before the 5th peak, will have their heights measured. These datasets are used then to compute the damping ratio. & Ruler, with uncertainty $0.0005\si{\m}$                                              \\
+    \hline
+  \end{tabular}
+  \label{tab:1}
+  \captionof{table}{Variables of investigation}
+\end{center}
+
+\begin{center}
+  \begin{tabular}{|P{0.3\textwidth}|p{0.3\textwidth}|p{0.3
+    \textwidth}|}
+
+    \hline
+    \multicolumn{3}{|c|}{Control Variables}                                                                                                                                                                                                               \\ \hline
+    Variable             & Rationale                                                           & Means of Control                                                                                                                                         \\ \hline
+    Liquid viscosity     & To keep the drag coefficient per Stoke's Law constant               & Using \textbf{water from the same source} throughout the experiment, and keep the \textbf{room temperature} constant by turning off the air conditioning \\ \hline
+    Radius of the sphere & This is so that the drag force, per Stoke's law, is constant        & Using a set of spherical masses of the same diameter                                                                                                     \\ \hline
+    Spring constant      & This is so that the natural frequency of the system is constant     & Using the same spring throughout the experiment                                                                                                          \\ \hline
+    Initial amplitude    & So that the damping ratio is not affected by the initial conditions & Pulling the spring down by equal distances for every mass.                                                                                               \\ \hline
+    Damping coefficient  & Linearizes relationship between damping ratio and mass              & Previous means of control keep fluid viscosity and object dimensions constant, so the damping coefficient, which depend on these, will be constant.      \\
+    \hline
+  \end{tabular}
+  \label{tab:2}
+  \captionof{table}{Control variables}
+\end{center}
 
 \subsection{Apparatus and Materials}
-vernier callipers
+\img{figs/setup.png}{0.8}{The experimental setup}{setup}
 
 \subsection{Methodology}
 
@@ -206,6 +239,6 @@ vernier callipers
 
 \pagebreak
 
-% \printbibliography
+\printbibliography
 
 \end{document}

@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Xiyu Bao Physics HL Internal Assessment"] 1715717421 "Xiyu Bao Physics HL Internal Assessment.bcf" "Xiyu Bao Physics HL Internal Assessment.bbl" "Xiyu Bao Physics HL Internal Assessment" 1715722830 0
+["biber Xiyu Bao Physics HL Internal Assessment"] 1715770629 "Xiyu Bao Physics HL Internal Assessment.bcf" "Xiyu Bao Physics HL Internal Assessment.bbl" "Xiyu Bao Physics HL Internal Assessment" 1715880652 0
   "./Physics.bib" 1715717414 953 bb3a9ffd1000f61c64689cec49fb724c ""
-  "Xiyu Bao Physics HL Internal Assessment.bcf" 1715722830 125218 801560098aaf76c4e2a8a467dd09ce28 "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.bcf" 1715880652 125568 c181e9854290c2ac636407f688e29d8a "pdflatex"
   (generated)
   "Xiyu Bao Physics HL Internal Assessment.bbl"
   "Xiyu Bao Physics HL Internal Assessment.blg"
   (rewritten before read)
-["pdflatex"] 1715722829 "/Users/timthedev07/Documents/物理IA/论文/Xiyu Bao Physics HL Internal Assessment.tex" "Xiyu Bao Physics HL Internal Assessment.pdf" "Xiyu Bao Physics HL Internal Assessment" 1715722830 0
-  "/Users/timthedev07/Documents/物理IA/论文/Xiyu Bao Physics HL Internal Assessment.tex" 1715722829 7443 63770072d18b6e32d55370b9cba26fe6 ""
+["pdflatex"] 1715880651 "/Users/timthedev07/Documents/物理IA/论文/Xiyu Bao Physics HL Internal Assessment.tex" "Xiyu Bao Physics HL Internal Assessment.pdf" "Xiyu Bao Physics HL Internal Assessment" 1715880652 0
+  "/Users/timthedev07/Documents/物理IA/论文/Xiyu Bao Physics HL Internal Assessment.tex" 1715880648 10932 cdc55728b38192918e9c3e37535fb136 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -135,17 +135,19 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl" 1644096163 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations.sty" 1644096163 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty" 1238697683 10894 d359a13923460b2a73d4312d613554c8 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty" 1655066402 56148 51a9a8571c07b9921892ae11063ae853 ""
   "/usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf" 1677365944 40745 87bb86a62d462f93a1efc6b0c65c872e ""
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1698351117 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1698351051 7883457 869e73afaf79a5825410c57d17702400 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Xiyu Bao Physics HL Internal Assessment.aux" 1715722830 3153 b4df4c72e0804363efd05eeea8cc0bbe "pdflatex"
-  "Xiyu Bao Physics HL Internal Assessment.bbl" 1715717423 3836 503b1e4c09a3b1da65d343f24fcd831f "biber Xiyu Bao Physics HL Internal Assessment"
-  "Xiyu Bao Physics HL Internal Assessment.out" 1715722830 2036 8172e128525f5319fcd56598e805ddf2 "pdflatex"
-  "Xiyu Bao Physics HL Internal Assessment.run.xml" 1715722830 2683 80d6bcf9c2bf6f75a0430226bafce1c0 "pdflatex"
-  "Xiyu Bao Physics HL Internal Assessment.tex" 1715722829 7443 63770072d18b6e32d55370b9cba26fe6 ""
-  "Xiyu Bao Physics HL Internal Assessment.toc" 1715722830 1267 dfe433f5303107d4f8b7756428c59892 "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.aux" 1715880652 4090 2267bd65bdd11df7e2f9f7e13dca47e6 "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.bbl" 1715770645 3836 503b1e4c09a3b1da65d343f24fcd831f "biber Xiyu Bao Physics HL Internal Assessment"
+  "Xiyu Bao Physics HL Internal Assessment.out" 1715880652 2036 8172e128525f5319fcd56598e805ddf2 "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.run.xml" 1715880652 2683 80d6bcf9c2bf6f75a0430226bafce1c0 "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.tex" 1715880648 10932 cdc55728b38192918e9c3e37535fb136 ""
+  "Xiyu Bao Physics HL Internal Assessment.toc" 1715880652 1267 621e7830bf001ea437297dbb2b4efa2b "pdflatex"
+  "figs/setup.png" 1715880303 108937 056abed1ea44ffbafbc62390bc8825b1 ""
   (generated)
   "Xiyu Bao Physics HL Internal Assessment.aux"
   "Xiyu Bao Physics HL Internal Assessment.bcf"
