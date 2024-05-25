@@ -13,10 +13,10 @@
 \contentsline {subsection}{\numberline {3.1}Raw Data}{9}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}Qualitative Data}{9}{subsubsection.3.1.1}%
 \contentsline {subsubsection}{\numberline {3.1.2}Quantitative Data}{9}{subsubsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.2}Data Processing}{9}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Transformation}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Uncertainty Analysis}{11}{subsubsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Analysis and Interpretation}{11}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Conclusion}{11}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Evaluation}{11}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Extensibility}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {3.2}Data Processing}{10}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Transformation}{10}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Uncertainty Analysis}{12}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Analysis and Interpretation}{12}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Conclusion}{12}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Evaluation}{12}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Extensibility}{12}{subsection.4.2}%
