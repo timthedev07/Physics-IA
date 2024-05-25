@@ -962,6 +962,11 @@ INPUT figs/setup.png
 INPUT ./figs/setup.png
 INPUT ./figs/setup.png
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT ./figs/code/damping.png
+INPUT ./figs/code/damping.png
+INPUT figs/code/damping.png
+INPUT ./figs/code/damping.png
+INPUT ./figs/code/damping.png
 INPUT Xiyu Bao Physics HL Internal Assessment.aux
 INPUT ./Xiyu Bao Physics HL Internal Assessment.out
 INPUT ./Xiyu Bao Physics HL Internal Assessment.out

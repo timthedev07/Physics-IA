@@ -108,7 +108,7 @@
   \begin{center}
     \vspace*{3cm}
 
-    {\textbf{\Large{What is the relationship between the mass of a damped spring-block oscillator ([masses TBD]) and the damping ratio?}}}
+    {\textbf{\Large{What is the relationship between the mass of a damped spring-block oscillator {23.42g, 35.38g, 52.48g, 69.72g, 93.47g} and the damping ratio?}}}
 
     \vspace{1cm}
     \large{Physics HL}\\
@@ -136,7 +136,7 @@ This essay extends the investigation of simple harmonic motion by studying the d
 
 
 \subsection{The Research Question}
-What is the relationship between the mass of a damped spring-block oscillator ([masses TBD]) and the damping ratio?
+What is the relationship between the mass of a damped spring-block oscillator {23.42g, 35.38g, 52.48g, 69.72g, 93.47g} and the damping ratio?
 
 \subsection{Background Information}
 An ideal and rather theoretical spring-mass system oscillates indefinitely, producing an ongoing sine or cosine curve. In reality, there will be a damping force that can be as minimally consequential as air resistance or as observable as viscous drag in a liquid. Anyway, energy is dissipated to the surroundings and hence the amplitude will gradually decrease until the oscillation stops.
@@ -321,6 +321,10 @@ $$\delta = \ln\paren{\frac{A_n}{A_{n+1}}} \text{ and } \delta = \frac{2\pi \zeta
   \delta^2                   & = \zeta^2\paren{4\pi^2 + \delta^2}        \\
   \zeta                      & = \frac{\delta}{\sqrt{4\pi^2 + \delta^2}}
 \end{align*}
+
+This step is encapsulated in the following Python snippet that belongs to an overall script that processes the data and generates the graph.
+
+\img{figs/code/damping.png}{0.95}{Calculating the damping ratio with pd and np}{damping_code}
 
 \subsubsection{Uncertainty Analysis}
 
