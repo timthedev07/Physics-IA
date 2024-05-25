@@ -16,8 +16,9 @@ pgf_with_latex = {  # setup matplotlib to use latex for output
 mpl.rcParams.update(pgf_with_latex)
 
 SCRIPT_FILE_DIR = path.dirname(path.realpath(__file__))
-DATADIR = path.join(SCRIPT_FILE_DIR, "../data")
-PEAK_IND = (2, 7)  # 7 not included, 0-indexed
+DATADIR = path.join(SCRIPT_FILE_DIR, "../data/peaks")
+TRIAL_NUM = 3
+PEAK_IND = (2, 5)  # 7 not included, 0-indexed
 K = 10  # to be changed
 R = 2.5 / 100
 RError = 0.05 / 100
@@ -42,7 +43,6 @@ def expectedGradient():
 
 def avgDampingRatio(row: pd.Series):
     ratios = np.array([])
-    T = row["Time Period"]
 
     for i in range(PEAK_IND[0], PEAK_IND[1] - 1):
         for j in range(i + 1, PEAK_IND[1]):
@@ -54,27 +54,26 @@ def avgDampingRatio(row: pd.Series):
     return np.average(ratios)
 
 
-def getTimes(row: pd.Series):
-    T = row["Time Period"]
-    for i in range(0, PEAK_IND[0] - PEAK_IND[1]):
-        j = i + PEAK_IND[0]
-        colName = f"Time at Peak {i + 1}"
-        t = (0.25 + i) * T
-    return pd.Series([(0.25 + i) * T for i in range(PEAK_IND[1] - PEAK_IND[0])])
+def averageData():
 
-
-def addTimes(df: pd.DataFrame):
-    df[[f"Time at Peak {i}" for i in range(1, PEAK_IND[1] - PEAK_IND[0] + 1)]] = (
-        df.apply(getTimes, axis=1)
+    data = (
+        pd.concat([readCSV(f"Trial {i}-表格 1.csv") for i in range(1, TRIAL_NUM + 1)])
+        .groupby(["Bob", "Mass"], as_index=False, sort=False)[
+            [f"Peak {i - PEAK_IND[0] + 1}" for i in range(PEAK_IND[0], PEAK_IND[1])]
+        ]
+        .mean()
     )
-    return df
+    print(data)
+
+    # data = pd.merge(data, tmp, on=["Mass", "Bob"])
+    return data
 
 
 def processData():
-    df = readCSV()
+    df = averageData()
+    print(df)
     df.reset_index()
 
-    # df = addTimes(df)
     df["Damping Ratio"] = df.apply(
         avgDampingRatio,
         axis=1,
@@ -94,6 +93,9 @@ def main():
 
     # prepare data
     df = processData()
+
+    return None
+
     x = df["Mass Reciprocal"]
     y = df["Zeta Squared"]
     m, b = np.polyfit(x, y, 1)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  16 MAY 2024 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  25 MAY 2024 21:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,7 +404,12 @@ Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks20
+\minrowclearance=\skip74
+\rownum=\count413
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -414,9 +419,11 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip74
+\@mathmargin=\skip75
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -425,14 +432,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count413
+\inf@bad=\count414
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count414
-\leftroot@=\count415
+\uproot@=\count415
+\leftroot@=\count416
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count416
-\DOTSCASE@=\count417
+\classnum@=\count417
+\DOTSCASE@=\count418
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -445,31 +452,31 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen160
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count418
+\macc@depth=\count419
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count419
+\c@MaxMatrixCols=\count420
 \dotsspace@=\muskip21
-\c@parentequation=\count420
-\dspbrk@lvl=\count421
-\tag@help=\toks20
-\row@=\count422
-\column@=\count423
-\maxfields@=\count424
-\andhelp@=\toks21
+\c@parentequation=\count421
+\dspbrk@lvl=\count422
+\tag@help=\toks21
+\row@=\count423
+\column@=\count424
+\maxfields@=\count425
+\andhelp@=\toks22
 \eqnshift@=\dimen161
 \alignsep@=\dimen162
 \tagshift@=\dimen163
 \tagwidth@=\dimen164
 \totwidth@=\dimen165
 \lineht@=\dimen166
-\@envbody=\toks22
-\multlinegap=\skip75
-\multlinetaggap=\skip76
-\mathdisplay@stack=\toks23
+\@envbody=\toks23
+\multlinegap=\skip76
+\multlinetaggap=\skip77
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/esvect/esvect.sty
@@ -477,15 +484,17 @@ Package: esvect
 \symesvector=\mathgroup4
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
-\thm@preskip=\skip77
-\thm@postskip=\skip78
-\thm@headsep=\skip79
-\dth@everypar=\toks29
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip78
+\thm@postskip=\skip79
+\thm@headsep=\skip80
+\dth@everypar=\toks30
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+Package: outlines 2012/1/23 1.1 Ch. Pecheur
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
  (/usr/local/texlive/2023/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
@@ -505,11 +514,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count425
+\c@section@level=\count426
 )
 \@linkdim=\dimen167
-\Hy@linkcounter=\count426
-\Hy@pagecounter=\count427
+\Hy@linkcounter=\count427
+\Hy@pagecounter=\count428
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -519,7 +528,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/local/texlive/2023/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count428
+\Hy@SavedSpaceFactor=\count429
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -532,7 +541,7 @@ Package hyperref Info: Plain pages OFF on input line 4192.
 Package hyperref Info: Backreferencing OFF on input line 4197.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count429
+\c@Hy@tempcnt=\count430
 LaTeX Info: Redefining \url on input line 4763.
 \XeTeXLinkMargin=\dimen168
  (/usr/local/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty
@@ -540,7 +549,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count430
+\Fld@menulength=\count431
 \Field@Width=\dimen169
 \Fld@charsize=\dimen170
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -554,9 +563,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count431
-\c@Item=\count432
-\c@Hfootnote=\count433
+\Hy@abspage=\count432
+\c@Item=\count433
+\c@Hfootnote=\count434
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -565,8 +574,8 @@ File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count434
-\c@bookmark@seq@number=\count435
+\Fld@listcount=\count435
+\c@bookmark@seq@number=\count436
  (/usr/local/texlive/2023/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -574,19 +583,19 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip80
+\Hy@SectionHShift=\skip81
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box64
-\sift@deathcycles=\count436
+\sift@deathcycles=\count437
 \@vwid@loff=\dimen171
 \@vwid@roff=\dimen172
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count437
-\float@exts=\toks30
+\c@float@type=\count438
+\float@exts=\toks31
 \float@box=\box65
-\@float@everytoks=\toks31
+\@float@everytoks=\toks32
 \@floatcapt=\box66
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -597,9 +606,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-Package: outlines 2012/1/23 1.1 Ch. Pecheur
-) (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
+)) (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/03/12 v3.6j Customizing captions (AR)
  (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
@@ -613,43 +620,43 @@ Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@hangindent=\dimen180
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count438
-\c@continuedfloat=\count439
+\c@caption@flags=\count439
+\c@continuedfloat=\count440
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 239.
-\c@subfigure=\count440
+\c@subfigure=\count441
 Package caption Info: New subtype `subtable' on input line 239.
-\c@subtable=\count441
+\c@subtable=\count442
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/esdiff/esdiff.sty
 Package: esdiff 
 )
-\c@lemma=\count442
-\c@proposition=\count443
-\c@assumption=\count444
+\c@lemma=\count443
+\c@proposition=\count444
+\c@assumption=\count445
  (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip81
+\labelindent=\skip82
 \enit@outerparindent=\dimen181
-\enit@toks=\toks32
+\enit@toks=\toks33
 \enit@inbox=\box67
-\enit@count@id=\count445
-\enitdp@description=\count446
+\enit@count@id=\count446
+\enitdp@description=\count447
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 47.
+Package hyperref Info: Option `colorlinks' set `true' on input line 48.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip82
-\f@nch@O@elh=\skip83
-\f@nch@O@erh=\skip84
-\f@nch@O@olh=\skip85
-\f@nch@O@orh=\skip86
-\f@nch@O@elf=\skip87
-\f@nch@O@erf=\skip88
-\f@nch@O@olf=\skip89
-\f@nch@O@orf=\skip90
+\f@nch@headwidth=\skip83
+\f@nch@O@elh=\skip84
+\f@nch@O@erh=\skip85
+\f@nch@O@olh=\skip86
+\f@nch@O@orh=\skip87
+\f@nch@O@elf=\skip88
+\f@nch@O@erf=\skip89
+\f@nch@O@olf=\skip90
+\f@nch@O@orf=\skip91
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -665,30 +672,30 @@ LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
 )
-\@quotelevel=\count447
-\@quotereset=\count448
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 96.
+\@quotelevel=\count448
+\@quotereset=\count449
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 99.
  (./Xiyu Bao Physics HL Internal Assessment.aux)
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
@@ -719,25 +726,25 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"Xiyu Bao Physics HL Internal Assessment".bbl' found.
  (./Xiyu Bao Physics HL Internal Assessment.bbl)
-Package biblatex Info: Reference section=0 on input line 96.
-Package biblatex Info: Reference segment=0 on input line 96.
+Package biblatex Info: Reference section=0 on input line 99.
+Package biblatex Info: Reference segment=0 on input line 99.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 96.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 99.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count449
+\scratchcounter=\count450
 \scratchdimen=\dimen182
 \scratchbox=\box68
-\nofMPsegments=\count450
-\nofMParguments=\count451
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count452
+\nofMPsegments=\count451
+\nofMParguments=\count452
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count453
 \MPscratchDim=\dimen183
-\MPnumerator=\count453
-\makeMPintoPDFobject=\count454
-\everyMPtoPDFconversion=\toks34
+\MPnumerator=\count454
+\makeMPintoPDFobject=\count455
+\everyMPtoPDFconversion=\toks35
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -778,7 +785,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 96.
+Package hyperref Info: Link coloring ON on input line 99.
 (./Xiyu Bao Physics HL Internal Assessment.out) (./Xiyu Bao Physics HL Internal Assessment.out)
 \@outlinefile=\write4
 \openout4 = `"Xiyu Bao Physics HL Internal Assessment.out"'.
@@ -807,12 +814,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 
+l.129 
        [1]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.147   \label
+l.151   \label
               {as:1} [1
 
 ] [2]
@@ -823,81 +830,92 @@ Package siunitx Info: Option "per-mode = reciprocal-positive-first" has been
 (siunitx)             Use "per-mode = power-positive-first" as a replacement.
 
  [3]
-Underfull \hbox (badness 6944) in paragraph at lines 194--194
+Underfull \hbox (badness 6944) in paragraph at lines 200--200
 []|\OT1/cmr/m/n/12 At least 5 con-sec-u-tive
  []
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 194--194
+Underfull \hbox (badness 2245) in paragraph at lines 200--200
 \OT1/cmr/m/n/12 peaks, if the os-cil-la-tion
  []
 
 
-Underfull \hbox (badness 4752) in paragraph at lines 194--195
+Underfull \hbox (badness 4752) in paragraph at lines 200--201
 []|\OT1/cmr/m/n/12 Ruler, with un-cer-tainty
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 198.
+(caption)                particular \caption on input line 204.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (4.47275pt too wide) in paragraph at lines 189--198
+Overfull \hbox (4.47275pt too wide) in paragraph at lines 195--204
  [] 
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 208--208
+Underfull \hbox (badness 1242) in paragraph at lines 214--214
 []|\OT1/cmr/m/n/12 Using \OT1/cmr/bx/n/12 wa-ter from the
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 209--209
+Underfull \hbox (badness 1005) in paragraph at lines 215--215
 []|\OT1/cmr/m/n/12 Using a set of spher-i-cal
  []
 
 
-Underfull \hbox (badness 5592) in paragraph at lines 210--210
+Underfull \hbox (badness 5592) in paragraph at lines 216--216
 []|\OT1/cmr/m/n/12 Using the same spring
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 216--216
+\OT1/cmr/m/n/12 through-out the ex-per-i-
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 218--219
 \OT1/cmr/m/n/12 which de-pend on these,
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 216.
+(caption)                particular \caption on input line 222.
 See the caption package documentation for explanation.
 
 [4]
-<figs/setup.png, id=128, 1000.73875pt x 607.26875pt>
+<figs/setup.png, id=153, 1000.73875pt x 607.26875pt>
 File: figs/setup.png Graphic file (type png)
 <use figs/setup.png>
-Package pdftex.def Info: figs/setup.png  used on input line 220.
+Package pdftex.def Info: figs/setup.png  used on input line 226.
 (pdftex.def)             Requested size: 364.19664pt x 220.99799pt.
- [5] [6 <./figs/setup.png>] [7] [8] (./Xiyu Bao Physics HL Internal Assessment.aux)
+ [5] [6 <./figs/setup.png>] [7]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 284.
+See the caption package documentation for explanation.
+
+[8] [9] [10] (./Xiyu Bao Physics HL Internal Assessment.aux)
 Package rerunfilecheck Info: File `"Xiyu Bao Physics HL Internal Assessment".out' has not changed.
-(rerunfilecheck)             Checksum: 8172E128525F5319FCD56598E805DDF2;2036.
+(rerunfilecheck)             Checksum: F251D5C798B83F27EFC041673DB289AA;2803.
 Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessment".run.xml'.
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26285 strings out of 476025
- 520211 string characters out of 5790016
- 1860388 words of memory out of 5000000
- 46429 multiletter control sequences out of 15000+600000
- 519404 words of font info for 60 fonts, out of 8000000 for 9000
+ 26486 strings out of 476025
+ 523179 string characters out of 5790016
+ 1864388 words of memory out of 5000000
+ 46578 multiletter control sequences out of 15000+600000
+ 519573 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,12n,83p,759b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (10 pages, 185619 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (12 pages, 203714 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

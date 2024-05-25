@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Xiyu Bao Physics HL Internal Assessment"] 1715770629 "Xiyu Bao Physics HL Internal Assessment.bcf" "Xiyu Bao Physics HL Internal Assessment.bbl" "Xiyu Bao Physics HL Internal Assessment" 1715880652 0
+["biber Xiyu Bao Physics HL Internal Assessment"] 0 "Xiyu Bao Physics HL Internal Assessment.bcf" "Xiyu Bao Physics HL Internal Assessment.bbl" "Xiyu Bao Physics HL Internal Assessment" 1716666681 -1
   "./Physics.bib" 1715717414 953 bb3a9ffd1000f61c64689cec49fb724c ""
-  "Xiyu Bao Physics HL Internal Assessment.bcf" 1715880652 125568 c181e9854290c2ac636407f688e29d8a "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.bcf" 1716666681 125568 c181e9854290c2ac636407f688e29d8a "pdflatex"
   (generated)
   "Xiyu Bao Physics HL Internal Assessment.bbl"
   "Xiyu Bao Physics HL Internal Assessment.blg"
   (rewritten before read)
-["pdflatex"] 1715880651 "/Users/timthedev07/Documents/物理IA/论文/Xiyu Bao Physics HL Internal Assessment.tex" "Xiyu Bao Physics HL Internal Assessment.pdf" "Xiyu Bao Physics HL Internal Assessment" 1715880652 0
-  "/Users/timthedev07/Documents/物理IA/论文/Xiyu Bao Physics HL Internal Assessment.tex" 1715880648 10932 cdc55728b38192918e9c3e37535fb136 ""
+["pdflatex"] 1716666680 "/Users/timthedev07/Documents/物理IA/论文/Xiyu Bao Physics HL Internal Assessment.tex" "Xiyu Bao Physics HL Internal Assessment.pdf" "Xiyu Bao Physics HL Internal Assessment" 1716666681 0
+  "/Users/timthedev07/Documents/物理IA/论文/Xiyu Bao Physics HL Internal Assessment.tex" 1716666678 17429 156e5a18f4183be96fd11fb5e814cc16 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -29,6 +29,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1136768653 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/esvect/vect10.tfm" 1238776476 372 07da2e555f4c8dac959d0bb59cacb4dc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/esvect/vect6.tfm" 1238776476 372 e6493454680b692175addf943602cee1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/esvect/vect8.tfm" 1238776476 372 4f0047d7e99a201724968cf4743804cf ""
@@ -42,6 +43,7 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1248133631 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -92,6 +94,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty" 1678653221 71836 1a735454ad10692452eb2f2fc37f3865 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty" 1678653221 12462 ecf33913ce1e8012075d24e1f47f0d9b ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty" 1525128982 329481 7fc6b003158402a4c694bc0a1b729308 ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty" 1659300143 12441 3b2a708337608012a865c7d9b7f05d28 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/esdiff/esdiff.sty" 1214842699 6725 81b0356953596a27e8aae3837fdac30d ""
@@ -105,6 +108,7 @@
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def" 1663965824 19448 1e988b341dda20961a6b931bcde55519 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty" 1654720880 7233 e46ce9241d2b2ca2a78155475fdd557a ""
+  "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def" 1654720880 5009 d242512eef244b70f2fc3fde14419206 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty" 1654720880 18387 8f900a490197ebaf93c02ae9476d4b09 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty" 1654720880 8010 a8d949cbdbc5c983593827c9eec252e1 ""
   "/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty" 1654720880 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
@@ -141,12 +145,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1698351117 4623355 b8cad38412faebe1ce5b780a45db67bd ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1698351051 7883457 869e73afaf79a5825410c57d17702400 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "Xiyu Bao Physics HL Internal Assessment.aux" 1715880652 4090 2267bd65bdd11df7e2f9f7e13dca47e6 "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.aux" 1716666681 5002 7a0c8e4c82171460ca160bbf33184d1d "pdflatex"
   "Xiyu Bao Physics HL Internal Assessment.bbl" 1715770645 3836 503b1e4c09a3b1da65d343f24fcd831f "biber Xiyu Bao Physics HL Internal Assessment"
-  "Xiyu Bao Physics HL Internal Assessment.out" 1715880652 2036 8172e128525f5319fcd56598e805ddf2 "pdflatex"
-  "Xiyu Bao Physics HL Internal Assessment.run.xml" 1715880652 2683 80d6bcf9c2bf6f75a0430226bafce1c0 "pdflatex"
-  "Xiyu Bao Physics HL Internal Assessment.tex" 1715880648 10932 cdc55728b38192918e9c3e37535fb136 ""
-  "Xiyu Bao Physics HL Internal Assessment.toc" 1715880652 1267 621e7830bf001ea437297dbb2b4efa2b "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.out" 1716666681 2803 f251d5c798b83f27efc041673db289aa "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.run.xml" 1716666681 2683 80d6bcf9c2bf6f75a0430226bafce1c0 "pdflatex"
+  "Xiyu Bao Physics HL Internal Assessment.tex" 1716666678 17429 156e5a18f4183be96fd11fb5e814cc16 ""
+  "Xiyu Bao Physics HL Internal Assessment.toc" 1716666681 1722 6bd9739258672298d3805c902179f26c "pdflatex"
   "figs/setup.png" 1715880303 108937 056abed1ea44ffbafbc62390bc8825b1 ""
   (generated)
   "Xiyu Bao Physics HL Internal Assessment.aux"

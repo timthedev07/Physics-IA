@@ -391,10 +391,27 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
@@ -455,6 +472,18 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amscls/amsthm.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -735,17 +764,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
-INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
@@ -943,6 +961,7 @@ INPUT ./figs/setup.png
 INPUT figs/setup.png
 INPUT ./figs/setup.png
 INPUT ./figs/setup.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT Xiyu Bao Physics HL Internal Assessment.aux
 INPUT ./Xiyu Bao Physics HL Internal Assessment.out
 INPUT ./Xiyu Bao Physics HL Internal Assessment.out
@@ -958,3 +977,4 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.p
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
