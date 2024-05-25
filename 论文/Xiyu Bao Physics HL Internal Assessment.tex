@@ -311,6 +311,17 @@ During the entire experiment, there is no spillage of water, which means that th
 
 \subsubsection{Transformation}
 
+Using the logarithmic decrement method per \Citeauthor{inman_2008_engineering} (\citeyear{inman_2008_engineering})
+$$\delta = \ln\paren{\frac{A_n}{A_{n+1}}} \text{ and } \delta = \frac{2\pi \zeta}{\sqrt{1 - \zeta^2}}$$ where $A_n$ and $A_{n + 1}$ denote any pair of consecutive peaks' heights.
+
+\noindent It then follows that
+\begin{align*}
+  \delta^2                   & = \frac{4\pi^2 \zeta^2}{1 - \zeta^2}      \\
+  \delta^2 - \delta^2\zeta^2 & = 4\pi^2\zeta^2                           \\
+  \delta^2                   & = \zeta^2\paren{4\pi^2 + \delta^2}        \\
+  \zeta                      & = \frac{\delta}{\sqrt{4\pi^2 + \delta^2}}
+\end{align*}
+
 \subsubsection{Uncertainty Analysis}
 
 \subsection{Analysis and Interpretation}

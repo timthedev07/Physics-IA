@@ -17,7 +17,7 @@ mpl.rcParams.update(pgf_with_latex)
 
 SCRIPT_FILE_DIR = path.dirname(path.realpath(__file__))
 DATADIR = path.join(SCRIPT_FILE_DIR, "../data/peaks")
-TRIAL_NUM = 3
+TRIAL_NUM = 5
 PEAK_IND = (2, 5)  # 7 not included, 0-indexed
 K = 10  # to be changed
 R = 2.5 / 100
@@ -41,21 +41,31 @@ def expectedGradient():
     return 9 * (math.pi) ** 2 * R**2 * η**2 / K
 
 
+# Calculate the average damping ratio for each row in the dataframe
 def avgDampingRatio(row: pd.Series):
-    ratios = np.array([])
+    ratios = np.array([])  # Create an empty array to store the damping ratios
 
+    # Iterate over the range of peak indices
     for i in range(PEAK_IND[0], PEAK_IND[1] - 1):
+        # Iterate over the range of peak indices starting from i+1
+        # the purpose of this double loop is to calculate the damping
+        # ratio between every possible pair of peaks
         for j in range(i + 1, PEAK_IND[1]):
-            n = j - i
-            delta = (1 / n) * math.log((row.iloc[i]) / row.iloc[j])
-            zeta = delta / math.sqrt(4 * (math.pi) ** 2 + delta**2)
+            n = j - i  # Calculate the number of cycles between i and j
+            delta = (1 / n) * math.log(
+                (row.iloc[i]) / row.iloc[j]
+            )  # Calculate the logarithmic decrement between the peaks
+            zeta = delta / math.sqrt(
+                4 * (math.pi) ** 2 + delta**2
+            )  # Calculate the damping ratio using the logarithmic difference
+            ratios = np.append(
+                ratios, zeta
+            )  # Append the damping ratio to the ratios array
 
-            ratios = np.append(ratios, zeta)
-    return np.average(ratios)
+    return np.average(ratios)  # Return the average damping ratio
 
 
 def averageData():
-
     data = (
         pd.concat([readCSV(f"Trial {i}-表格 1.csv") for i in range(1, TRIAL_NUM + 1)])
         .groupby(["Bob", "Mass"], as_index=False, sort=False)[
@@ -63,15 +73,11 @@ def averageData():
         ]
         .mean()
     )
-    print(data)
-
-    # data = pd.merge(data, tmp, on=["Mass", "Bob"])
     return data
 
 
 def processData():
     df = averageData()
-    print(df)
     df.reset_index()
 
     df["Damping Ratio"] = df.apply(

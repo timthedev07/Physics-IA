@@ -19,6 +19,41 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
+    \entry{inman_2008_engineering}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5886c46bff33e270aa37729c05574a86}{%
+           family={Inman},
+           familyi={I\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5886c46bff33e270aa37729c05574a86}
+      \strng{fullhash}{5886c46bff33e270aa37729c05574a86}
+      \strng{bibnamehash}{5886c46bff33e270aa37729c05574a86}
+      \strng{authorbibnamehash}{5886c46bff33e270aa37729c05574a86}
+      \strng{authornamehash}{5886c46bff33e270aa37729c05574a86}
+      \strng{authorfullhash}{5886c46bff33e270aa37729c05574a86}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Engineering Vibration FOURTH EDITION}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://api.pageplace.de/preview/DT0400.9780273785217_A24571595/preview-9780273785217_A24571595.pdf
+      \endverb
+      \verb{url}
+      \verb https://api.pageplace.de/preview/DT0400.9780273785217_A24571595/preview-9780273785217_A24571595.pdf
+      \endverb
+    \endentry
     \entry{miller_2004_13}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ac01acc03e7ac8d01d3126b8d377e83e}{%
@@ -59,6 +94,41 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
+    \entry{inman_2008_engineering}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5886c46bff33e270aa37729c05574a86}{%
+           family={Inman},
+           familyi={I\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5886c46bff33e270aa37729c05574a86}
+      \strng{fullhash}{5886c46bff33e270aa37729c05574a86}
+      \strng{bibnamehash}{5886c46bff33e270aa37729c05574a86}
+      \strng{authorbibnamehash}{5886c46bff33e270aa37729c05574a86}
+      \strng{authornamehash}{5886c46bff33e270aa37729c05574a86}
+      \strng{authorfullhash}{5886c46bff33e270aa37729c05574a86}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Engineering Vibration FOURTH EDITION}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://api.pageplace.de/preview/DT0400.9780273785217_A24571595/preview-9780273785217_A24571595.pdf
+      \endverb
+      \verb{url}
+      \verb https://api.pageplace.de/preview/DT0400.9780273785217_A24571595/preview-9780273785217_A24571595.pdf
+      \endverb
+    \endentry
     \entry{miller_2004_13}{misc}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ac01acc03e7ac8d01d3126b8d377e83e}{%

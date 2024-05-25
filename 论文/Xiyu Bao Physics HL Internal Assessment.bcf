@@ -2830,6 +2830,8 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">miller_2004_13</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">inman_2008_engineering</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">inman_2008_engineering</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
