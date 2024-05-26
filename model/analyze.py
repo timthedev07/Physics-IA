@@ -21,9 +21,8 @@ TRIAL_NUM = 5
 PEAK_IND = (2, 5)  # 7 not included, 0-indexed
 K = 10  # to be changed
 R = 2.5 / 100
-RError = 0.05 / 100
 η = 0.85
-mError = 0.005  # unit is gram
+mError = 0.005 / 1000  # unit is gram
 peakError = 0.5 / 1000
 
 
@@ -44,6 +43,7 @@ def expectedGradient():
 # Calculate the average damping ratio for each row in the dataframe
 def avgDampingRatio(row: pd.Series):
     ratios = np.array([])  # Create an empty array to store the damping ratios
+    zetaUncertainties = np.array([])
 
     # Iterate over the range of peak indices
     for i in range(PEAK_IND[0], PEAK_IND[1] - 1):
@@ -52,9 +52,11 @@ def avgDampingRatio(row: pd.Series):
         # ratio between every possible pair of peaks
         for j in range(i + 1, PEAK_IND[1]):
             n = j - i  # Calculate the number of cycles between i and j
+            A_i, A_j = row.iloc[i], row.iloc[j]  # Get the amplitudes of the peaks
             delta = (1 / n) * math.log(
-                (row.iloc[i]) / row.iloc[j]
+                A_i / A_j
             )  # Calculate the logarithmic decrement between the peaks
+            errAbsGamma = (A_i / A_j) * ((peakError / A_i) + (peakError / A_j))
             zeta = delta / math.sqrt(
                 4 * (math.pi) ** 2 + delta**2
             )  # Calculate the damping ratio using the logarithmic difference
@@ -62,6 +64,7 @@ def avgDampingRatio(row: pd.Series):
                 ratios, zeta
             )  # Append the damping ratio to the ratios array
 
+    # NOTE: average of uncertainties, or uncertainty of average
     return np.average(ratios)  # Return the average damping ratio
 
 
@@ -73,6 +76,12 @@ def averageData():
         ]
         .mean()
     )
+    # convert from gram to kg
+    data["Mass"] = data["Mass"] / 1000
+    # unit conversion
+    for i in range(PEAK_IND[0], PEAK_IND[1]):
+        # convert from cm to m
+        data[f"Peak {i - PEAK_IND[0] + 1}"] = data[f"Peak {i - PEAK_IND[0] + 1}"] / 100
     return data
 
 
@@ -85,7 +94,10 @@ def processData():
         axis=1,
     )
     df = df.sort_values("Mass")
-    df["Mass Reciprocal"] = df.apply(lambda row: 1 / (row["Mass"] / 1000), axis=1)
+    df["Mass Reciprocal"] = df.apply(lambda row: 1 / (row["Mass"]), axis=1)
+    df["Mass Uncertainties"] = df.apply(
+        lambda row: np.power(row["Mass"], -2) * mError, axis=1
+    )
     df["Zeta Squared"] = df.apply(lambda x: x["Damping Ratio"] ** 2, axis=1)
     return df
 
@@ -99,6 +111,7 @@ def main():
 
     # prepare data
     df = processData()
+    print(df)
 
     return None
 

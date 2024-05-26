@@ -92,6 +92,46 @@
       \verb https://dspace.mit.edu/bitstream/handle/1721.1/34888/18-03Spring2004/NR/rdonlyres/Mathematics/18-03Spring2004/B76E6F4F-7B05-4DA0-A5A5-03FA4ACCB6B2/0/sup_13.pdf
       \endverb
     \endentry
+    \entry{vacher_2001_the}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d84b463d1fc6f60fdd3f14e46be0a27b}{%
+           family={Vacher},
+           familyi={V\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Journal of Geoscience Education}%
+      }
+      \strng{namehash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{fullhash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{bibnamehash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{authorbibnamehash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{authornamehash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{authorfullhash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Taylor Series and Error Propagation}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{305\bibrangedash 313}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://cdn.serc.carleton.edu/files/nagt/jge/columns/CG16-v49n3p305.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdn.serc.carleton.edu/files/nagt/jge/columns/CG16-v49n3p305.pdf
+      \endverb
+    \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
     \entry{inman_2008_engineering}{misc}{}
@@ -165,6 +205,46 @@
       \endverb
       \verb{url}
       \verb https://dspace.mit.edu/bitstream/handle/1721.1/34888/18-03Spring2004/NR/rdonlyres/Mathematics/18-03Spring2004/B76E6F4F-7B05-4DA0-A5A5-03FA4ACCB6B2/0/sup_13.pdf
+      \endverb
+    \endentry
+    \entry{vacher_2001_the}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d84b463d1fc6f60fdd3f14e46be0a27b}{%
+           family={Vacher},
+           familyi={V\bibinitperiod},
+           given={H},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Journal of Geoscience Education}%
+      }
+      \strng{namehash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{fullhash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{bibnamehash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{authorbibnamehash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{authornamehash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \strng{authorfullhash}{d84b463d1fc6f60fdd3f14e46be0a27b}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Taylor Series and Error Propagation}
+      \field{urlday}{26}
+      \field{urlmonth}{5}
+      \field{urlyear}{2024}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \field{pages}{305\bibrangedash 313}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://cdn.serc.carleton.edu/files/nagt/jge/columns/CG16-v49n3p305.pdf
+      \endverb
+      \verb{url}
+      \verb https://cdn.serc.carleton.edu/files/nagt/jge/columns/CG16-v49n3p305.pdf
       \endverb
     \endentry
   \enddatalist

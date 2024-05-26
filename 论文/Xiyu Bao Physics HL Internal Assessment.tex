@@ -88,6 +88,7 @@
 \newcommand{\coord}[3]{\angled{#1,\, #2,\, #3}}
 \newcommand{\pair}[2]{\paren{#1,\, #2}}
 \newcommand{\thcolor}{\cellcolor{Blue!25}}
+\newcommand{\chcolor}{\cellcolor{RedOrange!25}}
 \usepackage{cleveref}
 \crefname{lemma}{Lemma}{Lemmas}
 \crefname{assumption}{Assumption}{Assumptions}
@@ -249,7 +250,7 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
   \2 Measure the height of the mass from the surface of the desk, and record as $h_0$
   \2 Adjust the vertical camera position such that it levels with the reading $(h_0 - \dfrac{A_0}{2}) \si{\cm}$ to minimize parallax error of the camera.
   \2 For $j$ from 1 to 3 inclusive, repeat the following
-  \3 Pull the mass down by $A_0\,\si{\cm}$ by reading $h_0 - A_0$ from the ruler at eye level.
+  \3 Pull the mass down by $A_0\,\si{\cm}$ by reading $h_0 - A_0$ from the ruler at eye level. The center of the mass should be the height a which readings are taken.
   \3 Start the camera recording.
   \3 Release the mass.
   \3 Record the clip until the 5th negative peak is reached.
@@ -328,20 +329,20 @@ $$\delta = \ln\paren{\frac{A_n}{A_{n+1}}} \text{ and } \delta = \frac{2\pi \zeta
 This step is encapsulated in the following Python snippet that belongs to an overall script for processing the data and generating the graph.
 
 \img{figs/code/damping.png}{0.8}{Calculating the damping ratio with pandas in Python}{damping_code}
-\noindent Note that $\overline{A_n}$ denotes the average value of the $n$-th peak across the five trials.
+\noindent Note that $\overline{A_i}$ denotes the average value of the $i$-th peak across the five trials.
 
 \begin{table}[htbp]
   \begin{center}
     \bgroup
     \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|P{0.16\textwidth}|*{3}{P{0.12\textwidth}|}P{0.145\textwidth}|P{0.145\textwidth}|}
+    \begin{tabular}{|P{0.16\textwidth}|*{3}{P{0.12\textwidth}|}P{0.145\textwidth}|}
       \hline
-      \thcolor {$m \pm 0.005$ ($\si{\g}$)} & \thcolor $\overline{A_1}$ ($\si{\cm}$) & \thcolor $\overline{A_2}$ ($\si{\cm}$) & \thcolor $\overline{A_3}$ ($\si{\cm}$) & \thcolor $\overline{\delta}$ (unitless) & \thcolor $\zeta$ (unitless) \\ \hline
-      23.42                                &                                        &                                        &                                        &                                         &                             \\ \hline
-      35.38                                &                                        &                                        &                                        &                                         &                             \\ \hline
-      52.48                                &                                        &                                        &                                        &                                         &                             \\ \hline
-      69.72                                &                                        &                                        &                                        &                                         &                             \\ \hline
-      93.47                                &                                        &                                        &                                        &                                         &                             \\ \hline
+      \thcolor {$m \pm 0.005$ ($\si{\g}$)} & \thcolor $\overline{A_1}$ ($\si{\cm}$) & \thcolor $\overline{A_2}$ ($\si{\cm}$) & \thcolor $\overline{A_3}$ ($\si{\cm}$) & \thcolor $\zeta$ (unitless) \\ \hline
+      23.42                                &                                        &                                        &                                        &                             \\ \hline
+      35.38                                &                                        &                                        &                                        &                             \\ \hline
+      52.48                                &                                        &                                        &                                        &                             \\ \hline
+      69.72                                &                                        &                                        &                                        &                             \\ \hline
+      93.47                                &                                        &                                        &                                        &                             \\ \hline
     \end{tabular}
     \label{tab:5}
     \captionof{table}{Processed data}
@@ -349,7 +350,34 @@ This step is encapsulated in the following Python snippet that belongs to an ove
   \end{center}
 \end{table}
 
+\pagebreak
+
 \subsubsection{Uncertainty Analysis}
+
+Let $\Delta x$ denote the absolute uncertainty of $x$. For $\Delta x \ll x$, the uncertainty of $f(x)$ is given by the following \parencite{vacher_2001_the}
+$$\Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x$$Let $i$, $j$ such that $i < j$ denote the indices of any two peaks, and also let $\gamma = \dfrac{A_i}{A_{i+1}}$, the following table summarizes the uncertainties involved in the calculation of the damping ratio from a pair of peaks indexed with $(i, j)$.
+
+\begin{table}[htbp]
+  \begin{center}
+    \bgroup
+    \renewcommand{\arraystretch}{2}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      \thcolor {Variable}       & \thcolor Calculation                      & \thcolor Absolute Uncertainty                                                                              \\ \hline
+      $m$                       &                                           & $0.005\si{\g}$                                                                                             \\ \hline
+      \chcolor $m^{-1}$         &                                           & $(m)^{-2}\cdot 0.005\si{\per\g}$                                                                           \\ \hline
+      $A_k,\,\forall k$         &                                           & $0.05\si{\cm}$                                                                                             \\ \hline
+      $\gamma_{i,j}$            & $\frac{A_i}{A_{j}}$                       & $\Delta \lambda_{i, j} = \frac{A_i}{A_{j}}(\frac{\Delta A_i}{A_{i}} + \frac{\Delta A_{j}}{A_{j}})$         \\ \hline
+      $\delta_{i,j}$            & $\frac{1}{j - i}\ln{\frac{A_i}{A_{j}}}$   & $\Delta \delta = \frac{\Delta \lambda}{\lambda}$                                                           \\ \hline
+      $\zeta_{i, j}$            & $\frac{\delta}{\sqrt{4\pi^2 + \delta^2}}$ & $\Delta \zeta_{i, j} = 2\paren{\frac{\Delta \delta}{\delta}}\sqb{\frac{\delta}{\sqrt{4\pi^2 + \delta^2}}}$ \\ \hline
+      \chcolor $\zeta_{i, j}^2$ &                                           & $2(\zeta_{i, j})\cdot (\Delta \zeta_{i, j})$                                                               \\ \hline
+    \end{tabular}
+    \label{tab:6}
+    \captionof{table}{Uncertainty Propagation}
+    \egroup
+  \end{center}
+\end{table}
+
 
 \subsection{Analysis and Interpretation}
 
