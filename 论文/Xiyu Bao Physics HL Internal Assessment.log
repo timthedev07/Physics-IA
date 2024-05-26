@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  26 MAY 2024 17:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  26 MAY 2024 21:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -893,45 +893,51 @@ Package pdftex.def Info: figs/setup.png  used on input line 220.
  [5] [6 <./figs/setup.png>] [7]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 278.
+(caption)                particular \caption on input line 280.
 See the caption package documentation for explanation.
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 309--309
 []|$\OML/cmm/m/it/12 m \OMS/cmsy/m/n/12 ^^F
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--305
-\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 005$
+Underfull \hbox (badness 10000) in paragraph at lines 309--309
+\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 01$
  []
 
-[9] [10]
+[10]
 <figs/code/damping.png, id=225, 1457.445pt x 1310.8975pt>
 File: figs/code/damping.png Graphic file (type png)
 <use figs/code/damping.png>
-Package pdftex.def Info: figs/code/damping.png  used on input line 331.
+Package pdftex.def Info: figs/code/damping.png  used on input line 335.
 (pdftex.def)             Requested size: 364.19664pt x 327.56355pt.
- [11] [12 <./figs/code/damping.png>] [13] [14] (./Xiyu Bao Physics HL Internal Assessment.aux)
+ [11] [12 <./figs/code/damping.png>]
+<figs/code/unc.png, id=241, 1523.6925pt x 2358.8125pt>
+File: figs/code/unc.png Graphic file (type png)
+<use figs/code/unc.png>
+Package pdftex.def Info: figs/code/unc.png  used on input line 388.
+(pdftex.def)             Requested size: 409.71689pt x 634.26044pt.
+ [13] [14 <./figs/code/unc.png>] [15] [16] (./Xiyu Bao Physics HL Internal Assessment.aux)
 Package rerunfilecheck Info: File `"Xiyu Bao Physics HL Internal Assessment".out' has not changed.
-(rerunfilecheck)             Checksum: F251D5C798B83F27EFC041673DB289AA;2803.
+(rerunfilecheck)             Checksum: DF76DA5E77DC66C89864E66BB76E87EA;2785.
 Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessment".run.xml'.
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26536 strings out of 476025
- 524243 string characters out of 5790016
+ 26548 strings out of 476025
+ 524446 string characters out of 5790016
  1872388 words of memory out of 5000000
- 46616 multiletter control sequences out of 15000+600000
+ 46624 multiletter control sequences out of 15000+600000
  521398 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,14n,83p,904b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,14n,83p,991b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (16 pages, 440036 bytes).
+Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (18 pages, 804575 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
- 288 compressed objects within 3 object streams
- 89 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

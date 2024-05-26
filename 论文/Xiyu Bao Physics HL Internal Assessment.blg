@@ -1,19 +1,19 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Xiyu Bao Physics HL Internal Assessment.blg'
-[37] biber-darwin:340> INFO - === Sun May 26, 2024, 15:01:28
+[37] biber-darwin:340> INFO - === Sun May 26, 2024, 21:16:51
 [46] Biber.pm:419> INFO - Reading 'Xiyu Bao Physics HL Internal Assessment.bcf'
 [95] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
 [105] Biber.pm:4419> INFO - Processing section 0
-[110] Biber.pm:4610> INFO - Looking for bibtex file 'Physics.bib' for section 0
-[111] bibtex.pm:1713> INFO - LaTeX decoding ...
-[113] bibtex.pm:1519> INFO - Found BibTeX data source 'Physics.bib'
-[136] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[136] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[136] Biber.pm:4239> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[136] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[141] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[141] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[141] Biber.pm:4239> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[141] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[146] bbl.pm:660> INFO - Writing 'Xiyu Bao Physics HL Internal Assessment.bbl' with encoding 'UTF-8'
-[147] bbl.pm:763> INFO - Output to Xiyu Bao Physics HL Internal Assessment.bbl
+[111] Biber.pm:4610> INFO - Looking for bibtex file 'Physics.bib' for section 0
+[112] bibtex.pm:1713> INFO - LaTeX decoding ...
+[115] bibtex.pm:1519> INFO - Found BibTeX data source 'Physics.bib'
+[138] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[138] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[138] Biber.pm:4239> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[138] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[144] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[144] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[144] Biber.pm:4239> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[144] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[149] bbl.pm:660> INFO - Writing 'Xiyu Bao Physics HL Internal Assessment.bbl' with encoding 'UTF-8'
+[150] bbl.pm:763> INFO - Output to Xiyu Bao Physics HL Internal Assessment.bbl

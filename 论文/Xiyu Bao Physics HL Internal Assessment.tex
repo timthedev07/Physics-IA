@@ -188,10 +188,10 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
 \begin{center}
   \begin{tabular}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
     \hline
-    \multicolumn{2}{|c}{\thcolor Variables} & \multicolumn{1}{|c}{\thcolor Explanation} & \multicolumn{1}{|c|}{\thcolor Measurement}                                                                                                                                                                                                                              \\  \hline
-    Independent                             & Mass $m$                                  & The masses of the spherical metal bobs                                                                                                                                           & Measured using an electric balance, to two d.p. with uncertainty $\pm 0.005 \si{\g}$ \\
+    \multicolumn{2}{|c}{\thcolor Variables} & \multicolumn{1}{|c}{\thcolor Explanation} & \multicolumn{1}{|c|}{\thcolor Measurement}                                                                                                                                                                                                                             \\  \hline
+    Independent                             & Mass $m$                                  & The masses of the spherical metal bobs                                                                                                                                           & Measured using an electric balance, to two d.p. with uncertainty $\pm 0.01 \si{\g}$ \\
     \hline
-    Dependent                               & Peak Amplitude                            & At least 5 consecutive peaks, if the oscillation does not stop before the 5th peak, will have their heights measured. These datasets are used then to compute the damping ratio. & Ruler, with uncertainty $\pm 0.0005\si{\m}$                                          \\
+    Dependent                               & Peak Amplitude                            & At least 5 consecutive peaks, if the oscillation does not stop before the 5th peak, will have their heights measured. These datasets are used then to compute the damping ratio. & Ruler, with uncertainty $\pm 0.1\si{\cm}$                                           \\
     \hline
   \end{tabular}
   \label{tab:1}
@@ -220,7 +220,7 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
 \img{figs/setup.png}{0.8}{The experimental setup}{setup}
 \begin{outline}[enumerate]
   \1 Ruler ($\pm 0.0005\si{\m}$)
-  \1 Electric balance ($\pm 0.005\si{\g}$)
+  \1 Electric balance ($\pm 0.01\si{\g}$)
   \1 Spring with spring constant $k = ???\si{\N\per\m}$
   \1 Mass set with five spherical masses of diameter $???\si{\cm}$, and masses
   \2 $m_1 = ???\si{\g}$
@@ -264,6 +264,8 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
 
 \subsection{Preliminary Trials}
 
+Preliminary trials were conducted to identify and resolve potential challenges, as well as to refine the experimental conditions. Initially, segments of metal wire were used to attach the masses to the spring, but this approach led to inconsistent wrapping and slipping. To improve the attachment's security and uniformity, Scotch tape was tested and found to be more effective, significantly reducing variability and enhancing setup repeatability. Precise measurement of the initial height ($h_0$) and consistent displacement of the mass by $A_0,\si{\cm}$ were also challenging. Aligning the ruler vertically against the retort stand and centering the mass over the beaker proved crucial for accuracy. Adjustments to the clamp and careful ruler leveling minimized parallax error, further reduced by positioning the camera at eye level.
+
 \subsection{Risk Assessment}
 
 \begin{center}
@@ -277,6 +279,8 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
   \label{tab:3}
   \captionof{table}{Risk Assessment}
 \end{center}
+
+\pagebreak
 
 \section{Results}
 
@@ -296,12 +300,12 @@ Let $m$ denote the mass of a bob, and $A_n$ denote the $n$-th peak height.
     \resizebox{0.98\textwidth}{!}{%
       \begin{tabular}{|m{0.076\textwidth}|*{16}{m{0.0625\textwidth}|}}
         \hline
-        \multicolumn{1}{|m{0.076\textwidth}|}{\thcolor {$m \pm 0.005$ ($\si{\g}$)}} & \multicolumn{5}{l|}{\thcolor \Large$A_1 \pm 0.05$ ($\si{\cm}$)} & \multicolumn{5}{l|}{\thcolor \Large$A_2 \pm 0.05$ ($\si{\cm}$)} & \multicolumn{5}{l|}{\thcolor \Large$A_3 \pm 0.05$ ($\si{\cm}$)}                                    \\ \hline
-        23.42                                                                       &                                                                 &                                                                 &                                                                 &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
-        35.38                                                                       &                                                                 &                                                                 &                                                                 &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
-        52.48                                                                       &                                                                 &                                                                 &                                                                 &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
-        69.72                                                                       &                                                                 &                                                                 &                                                                 &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
-        93.47                                                                       &                                                                 &                                                                 &                                                                 &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
+        \multicolumn{1}{|m{0.076\textwidth}|}{\thcolor {$m \pm 0.01$ ($\si{\g}$)}} & \multicolumn{5}{l|}{\thcolor \Large$A_1 \pm 0.1$ ($\si{\cm}$)} & \multicolumn{5}{l|}{\thcolor \Large$A_2 \pm 0.1$ ($\si{\cm}$)} & \multicolumn{5}{l|}{\thcolor \Large$A_3 \pm 0.1$ ($\si{\cm}$)}                                    \\ \hline
+        23.42                                                                      &                                                                &                                                                &                                                                &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
+        35.38                                                                      &                                                                &                                                                &                                                                &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
+        52.48                                                                      &                                                                &                                                                &                                                                &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
+        69.72                                                                      &                                                                &                                                                &                                                                &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
+        93.47                                                                      &                                                                &                                                                &                                                                &  &  &  &  &  &  &  &  &  &  &  & \\ \hline
       \end{tabular}}
     \label{tab:4}
     \captionof{table}{Raw data of peak amplitudes}
@@ -337,12 +341,12 @@ This step is encapsulated in the following Python snippet that belongs to an ove
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|P{0.16\textwidth}|*{3}{P{0.12\textwidth}|}P{0.145\textwidth}|}
       \hline
-      \thcolor {$m \pm 0.005$ ($\si{\g}$)} & \thcolor $\overline{A_1}$ ($\si{\cm}$) & \thcolor $\overline{A_2}$ ($\si{\cm}$) & \thcolor $\overline{A_3}$ ($\si{\cm}$) & \thcolor $\zeta$ (unitless) \\ \hline
-      23.42                                &                                        &                                        &                                        &                             \\ \hline
-      35.38                                &                                        &                                        &                                        &                             \\ \hline
-      52.48                                &                                        &                                        &                                        &                             \\ \hline
-      69.72                                &                                        &                                        &                                        &                             \\ \hline
-      93.47                                &                                        &                                        &                                        &                             \\ \hline
+      \thcolor {$m \pm 0.01$ ($\si{\g}$)} & \thcolor $\overline{A_1}$ ($\si{\cm}$) & \thcolor $\overline{A_2}$ ($\si{\cm}$) & \thcolor $\overline{A_3}$ ($\si{\cm}$) & \thcolor $\zeta$ (unitless) \\ \hline
+      23.42                               &                                        &                                        &                                        &                             \\ \hline
+      35.38                               &                                        &                                        &                                        &                             \\ \hline
+      52.48                               &                                        &                                        &                                        &                             \\ \hline
+      69.72                               &                                        &                                        &                                        &                             \\ \hline
+      93.47                               &                                        &                                        &                                        &                             \\ \hline
     \end{tabular}
     \label{tab:5}
     \captionof{table}{Processed data}
@@ -364,9 +368,9 @@ $$\Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x$$Let $i$, $j$ such that $i < 
     \begin{tabular}{|c|c|c|}
       \hline
       \thcolor {Variable}       & \thcolor Calculation                      & \thcolor Absolute Uncertainty                                                                              \\ \hline
-      $m$                       &                                           & $0.005\si{\g}$                                                                                             \\ \hline
-      \chcolor $m^{-1}$         &                                           & $(m)^{-2}\cdot 0.005\si{\per\g}$                                                                           \\ \hline
-      $A_k,\,\forall k$         &                                           & $0.05\si{\cm}$                                                                                             \\ \hline
+      $m$                       &                                           & $0.01\si{\g}$                                                                                              \\ \hline
+      \chcolor $m^{-1}$         &                                           & $(m)^{-2}\cdot 0.01\si{\per\g}$                                                                            \\ \hline
+      $A_k,\,\forall k$         &                                           & $0.1\si{\cm}$                                                                                              \\ \hline
       $\gamma_{i,j}$            & $\frac{A_i}{A_{j}}$                       & $\Delta \lambda_{i, j} = \frac{A_i}{A_{j}}(\frac{\Delta A_i}{A_{i}} + \frac{\Delta A_{j}}{A_{j}})$         \\ \hline
       $\delta_{i,j}$            & $\frac{1}{j - i}\ln{\frac{A_i}{A_{j}}}$   & $\Delta \delta = \frac{\Delta \lambda}{\lambda}$                                                           \\ \hline
       $\zeta_{i, j}$            & $\frac{\delta}{\sqrt{4\pi^2 + \delta^2}}$ & $\Delta \zeta_{i, j} = 2\paren{\frac{\Delta \delta}{\delta}}\sqb{\frac{\delta}{\sqrt{4\pi^2 + \delta^2}}}$ \\ \hline
@@ -378,8 +382,12 @@ $$\Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x$$Let $i$, $j$ such that $i < 
   \end{center}
 \end{table}
 
+\vspace{\baselineskip}
+To implement the above logic in Python, the previous code snippet in \cref{fig:damping_code} is extended to include the uncertainty calculations.
 
-\subsection{Analysis and Interpretation}
+\img{figs/code/unc.png}{0.9}{Calculating the damping ratio with uncertainties in Python}{unc_code}
+
+\subsection{Graphical Interpretation}
 
 \section{Conclusion}
 
