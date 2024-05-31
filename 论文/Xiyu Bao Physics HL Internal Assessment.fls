@@ -914,6 +914,11 @@ INPUT ./Xiyu Bao Physics HL Internal Assessment.out
 OUTPUT Xiyu Bao Physics HL Internal Assessment.out
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT ./Xiyu Bao Physics HL Internal Assessment.toc
@@ -981,11 +986,22 @@ INPUT ./figs/code/unc.png
 INPUT figs/code/unc.png
 INPUT ./figs/code/unc.png
 INPUT ./figs/code/unc.png
+INPUT ../model/figures/graph.png
+INPUT ../model/figures/graph.png
+INPUT ../model/figures/graph.png
+INPUT ../model/figures/graph.png
+INPUT ../model/figures/graph.png
+INPUT ../model/figures/graph_max_min.png
+INPUT ../model/figures/graph_max_min.png
+INPUT ../model/figures/graph_max_min.png
+INPUT ../model/figures/graph_max_min.png
+INPUT ../model/figures/graph_max_min.png
 INPUT Xiyu Bao Physics HL Internal Assessment.aux
 INPUT ./Xiyu Bao Physics HL Internal Assessment.out
 INPUT ./Xiyu Bao Physics HL Internal Assessment.out
 INPUT Xiyu Bao Physics HL Internal Assessment.run.xml
 OUTPUT Xiyu Bao Physics HL Internal Assessment.run.xml
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
