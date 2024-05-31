@@ -204,20 +204,22 @@ def drawMaxMin(plt, x, y, errY):
 
     xWithZero = np.insert(x, 0, GRAPH_START)
 
-    (minl,) = plt.plot(
-        xWithZero,
-        minM * xWithZero + minB,
-        label="Minimum slope",
-        color="mediumslateblue",
-        linestyle="dotted",
-    )
     (maxl,) = plt.plot(
         xWithZero,
-        maxM * xWithZero + maxB,
+        minM * xWithZero + minB,
         label="Maximum slope",
+        color="orange",
+        linestyle="dotted",
+    )
+    (minl,) = plt.plot(
+        xWithZero,
+        maxM * xWithZero + maxB,
+        label="Minimum slope",
         color="blueviolet",
         linestyle="dotted",
     )
+
+    print(fmt(maxM), fmt(minM))
 
     return (minl, maxl)
 

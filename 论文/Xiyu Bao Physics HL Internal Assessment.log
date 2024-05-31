@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  31 MAY 2024 18:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  31 MAY 2024 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -22,6 +22,22 @@ File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/02/25 v3.4 ragged2e Package
+\CenteringLeftskip=\skip50
+\RaggedLeftLeftskip=\skip51
+\RaggedRightLeftskip=\skip52
+\CenteringRightskip=\skip53
+\RaggedLeftRightskip=\skip54
+\RaggedRightRightskip=\skip55
+\CenteringParfillskip=\skip56
+\RaggedLeftParfillskip=\skip57
+\RaggedRightParfillskip=\skip58
+\JustifyingParfillskip=\skip59
+\CenteringParindent=\skip60
+\RaggedLeftParindent=\skip61
+\RaggedRightParindent=\skip62
+\JustifyingParindent=\skip63
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/biblatex.sty
@@ -102,14 +118,14 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@sectionciteorderinternal@0=\count301
 \blx@entrysetcounter=\count302
 \blx@biblioinstance=\count303
-\labelnumberwidth=\skip50
-\labelalphawidth=\skip51
-\biblabelsep=\skip52
-\bibitemsep=\skip53
-\bibnamesep=\skip54
-\bibinitsep=\skip55
-\bibparsep=\skip56
-\bibhang=\skip57
+\labelnumberwidth=\skip64
+\labelalphawidth=\skip65
+\biblabelsep=\skip66
+\bibitemsep=\skip67
+\bibnamesep=\skip68
+\bibinitsep=\skip69
+\bibparsep=\skip70
+\bibhang=\skip71
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language87
@@ -206,20 +222,20 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedcitation=\count382
 \c@pageref=\count383
 \c@savedpageref=\count384
-\shorthandwidth=\skip58
-\shortjournalwidth=\skip59
-\shortserieswidth=\skip60
-\shorttitlewidth=\skip61
-\shortauthorwidth=\skip62
-\shorteditorwidth=\skip63
-\locallabelnumberwidth=\skip64
-\locallabelalphawidth=\skip65
-\localshorthandwidth=\skip66
-\localshortjournalwidth=\skip67
-\localshortserieswidth=\skip68
-\localshorttitlewidth=\skip69
-\localshortauthorwidth=\skip70
-\localshorteditorwidth=\skip71
+\shorthandwidth=\skip72
+\shortjournalwidth=\skip73
+\shortserieswidth=\skip74
+\shorttitlewidth=\skip75
+\shortauthorwidth=\skip76
+\shorteditorwidth=\skip77
+\locallabelnumberwidth=\skip78
+\locallabelalphawidth=\skip79
+\localshorthandwidth=\skip80
+\localshortjournalwidth=\skip81
+\localshortserieswidth=\skip82
+\localshorttitlewidth=\skip83
+\localshortauthorwidth=\skip84
+\localshorteditorwidth=\skip85
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/blx-compat.def
@@ -358,8 +374,8 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \ar@mcellbox=\box60
 \extrarowheight=\dimen148
 \NC@list=\toks18
-\extratabsurround=\skip72
-\backup@length=\skip73
+\extratabsurround=\skip86
+\backup@length=\skip87
 \ar@cellbox=\box61
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -407,7 +423,7 @@ Package xcolor Info: Driver file: pdftex.def on input line 227.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 \everycr=\toks20
-\minrowclearance=\skip74
+\minrowclearance=\skip88
 \rownum=\count413
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
@@ -423,7 +439,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip75
+\@mathmargin=\skip89
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -474,8 +490,8 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen165
 \lineht@=\dimen166
 \@envbody=\toks23
-\multlinegap=\skip76
-\multlinetaggap=\skip77
+\multlinegap=\skip90
+\multlinetaggap=\skip91
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -489,9 +505,9 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks27
 \thm@notefont=\toks28
 \thm@headpunct=\toks29
-\thm@preskip=\skip78
-\thm@postskip=\skip79
-\thm@headsep=\skip80
+\thm@preskip=\skip92
+\thm@postskip=\skip93
+\thm@headsep=\skip94
 \dth@everypar=\toks30
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/outlines/outlines.sty
 Package: outlines 2012/1/23 1.1 Ch. Pecheur
@@ -583,7 +599,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip81
+\Hy@SectionHShift=\skip95
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box64
@@ -638,25 +654,25 @@ Package: esdiff
 \c@assumption=\count445
  (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip82
+\labelindent=\skip96
 \enit@outerparindent=\dimen181
 \enit@toks=\toks33
 \enit@inbox=\box67
 \enit@count@id=\count446
 \enitdp@description=\count447
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 48.
+Package hyperref Info: Option `colorlinks' set `true' on input line 49.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip83
-\f@nch@O@elh=\skip84
-\f@nch@O@erh=\skip85
-\f@nch@O@olh=\skip86
-\f@nch@O@orh=\skip87
-\f@nch@O@elf=\skip88
-\f@nch@O@erf=\skip89
-\f@nch@O@olf=\skip90
-\f@nch@O@orf=\skip91
+\f@nch@headwidth=\skip97
+\f@nch@O@elh=\skip98
+\f@nch@O@erh=\skip99
+\f@nch@O@olh=\skip100
+\f@nch@O@orh=\skip101
+\f@nch@O@elf=\skip102
+\f@nch@O@erf=\skip103
+\f@nch@O@olf=\skip104
+\f@nch@O@orf=\skip105
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -674,35 +690,28 @@ Package cleveref Info: `amsthm' support loaded on input line 3026.
 )
 \@quotelevel=\count448
 \@quotereset=\count449
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 100.
- (./Xiyu Bao Physics HL Internal Assessment.aux
-
-LaTeX Warning: Label `tab:5' multiply defined.
-
-
-LaTeX Warning: Label `tab:5@cref' multiply defined.
-
-)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 103.
+ (./Xiyu Bao Physics HL Internal Assessment.aux)
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
 Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
 Package biblatex Info: ... file 'english-apa.lbx' found.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
@@ -733,12 +742,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"Xiyu Bao Physics HL Internal Assessment".bbl' found.
  (./Xiyu Bao Physics HL Internal Assessment.bbl)
-Package biblatex Info: Reference section=0 on input line 100.
-Package biblatex Info: Reference segment=0 on input line 100.
+Package biblatex Info: Reference section=0 on input line 103.
+Package biblatex Info: Reference segment=0 on input line 103.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 100.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 103.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count450
@@ -766,14 +775,14 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.1319pt, 455.24408pt, 71.1319pt)
+* h-part:(L,W,R)=(56.90552pt, 483.69684pt, 56.90552pt)
 * v-part:(T,H,B)=(101.17755pt, 671.5993pt, 72.26999pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24408pt
+* \textwidth=483.69684pt
 * \textheight=671.5993pt
-* \oddsidemargin=-1.13809pt
-* \evensidemargin=-1.13809pt
+* \oddsidemargin=-15.36447pt
+* \evensidemargin=-15.36447pt
 * \topmargin=-8.09244pt
 * \headheight=15.0pt
 * \headsep=25.0pt
@@ -792,19 +801,19 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 100.
+Package hyperref Info: Link coloring ON on input line 103.
 (./Xiyu Bao Physics HL Internal Assessment.out) (./Xiyu Bao Physics HL Internal Assessment.out)
 \@outlinefile=\write4
 \openout4 = `"Xiyu Bao Physics HL Internal Assessment.out"'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 112.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 114.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <17.28> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 112.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 114.
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Xiyu Bao Physics HL Internal Assessment.toc
@@ -827,16 +836,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 
+l.127 
        [1]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 135.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.146   T
-         he damping force is the viscous drag force. [1
+l.149 \end{assumption}
+                       [1
 
 ] [2]
 
@@ -846,133 +855,76 @@ Package siunitx Info: Option "per-mode = reciprocal-positive-first" has been
 (siunitx)             Use "per-mode = power-positive-first" as a replacement.
 
  [3]
-Underfull \hbox (badness 6944) in paragraph at lines 194--194
-[]|\OT1/cmr/m/n/12 At least 5 con-sec-u-tive
- []
-
-
-Underfull \hbox (badness 2245) in paragraph at lines 194--194
-\OT1/cmr/m/n/12 peaks, if the os-cil-la-tion
- []
-
-
-Underfull \hbox (badness 4752) in paragraph at lines 194--195
-[]|\OT1/cmr/m/n/12 Ruler, with un-cer-tainty
- []
-
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 198.
+(caption)                particular \caption on input line 200.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (4.47275pt too wide) in paragraph at lines 189--198
- [] 
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 208--208
-[]|\OT1/cmr/m/n/12 Using \OT1/cmr/bx/n/12 wa-ter from the
- []
-
-
-Underfull \hbox (badness 1005) in paragraph at lines 209--209
-[]|\OT1/cmr/m/n/12 Using a set of spher-i-cal
- []
-
-
-Underfull \hbox (badness 5592) in paragraph at lines 210--210
-[]|\OT1/cmr/m/n/12 Using the same spring
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--210
-\OT1/cmr/m/n/12 through-out the ex-per-i-
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 211--211
-[]|\OT1/cmr/m/n/12 Initial am-pli-tude, $\OML/cmm/m/it/12 A[] \OT1/cmr/m/n/12 =
- []
-
-
-Underfull \hbox (badness 2173) in paragraph at lines 212--213
-\OT1/cmr/m/n/12 which de-pend on these,
- []
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 216.
+(caption)                particular \caption on input line 218.
 See the caption package documentation for explanation.
 
-[4]
-<figs/setup.png, id=154, 1000.73875pt x 607.26875pt>
+[4] [5]
+<figs/setup.png, id=181, 1000.73875pt x 607.26875pt>
 File: figs/setup.png Graphic file (type png)
 <use figs/setup.png>
-Package pdftex.def Info: figs/setup.png  used on input line 220.
-(pdftex.def)             Requested size: 364.19664pt x 220.99799pt.
- [5] [6 <./figs/setup.png>] [7]
+Package pdftex.def Info: figs/setup.png  used on input line 225.
+(pdftex.def)             Requested size: 386.95894pt x 234.81383pt.
+ [6 <./figs/setup.png>] [7]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 280.
+(caption)                particular \caption on input line 285.
 See the caption package documentation for explanation.
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
-[]|$\OML/cmm/m/it/12 m \OMS/cmsy/m/n/12 ^^F
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
-\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 01$
- []
-
-[10]
-<figs/code/damping.png, id=226, 1457.445pt x 1310.8975pt>
+[8] [9] [10]
+<figs/code/damping.png, id=246, 1457.445pt x 1310.8975pt>
 File: figs/code/damping.png Graphic file (type png)
 <use figs/code/damping.png>
-Package pdftex.def Info: figs/code/damping.png  used on input line 335.
-(pdftex.def)             Requested size: 364.19664pt x 327.56355pt.
+Package pdftex.def Info: figs/code/damping.png  used on input line 340.
+(pdftex.def)             Requested size: 386.95894pt x 348.04628pt.
  [11] [12 <./figs/code/damping.png>]
-<figs/code/unc.png, id=242, 1543.7675pt x 2358.8125pt>
+<figs/code/unc.png, id=262, 1543.7675pt x 2358.8125pt>
 File: figs/code/unc.png Graphic file (type png)
 <use figs/code/unc.png>
-Package pdftex.def Info: figs/code/unc.png  used on input line 388.
-(pdftex.def)             Requested size: 409.71689pt x 626.01816pt.
+Package pdftex.def Info: figs/code/unc.png  used on input line 393.
+(pdftex.def)             Requested size: 435.32419pt x 665.14203pt.
  [13] [14 <./figs/code/unc.png>]
-<../model/figures/graph.png, id=257, 462.528pt x 346.896pt>
+<../model/figures/graph.png, id=277, 462.528pt x 346.896pt>
 File: ../model/figures/graph.png Graphic file (type png)
 <use ../model/figures/graph.png>
-Package pdftex.def Info: ../model/figures/graph.png  used on input line 413.
-(pdftex.def)             Requested size: 455.24408pt x 341.44843pt.
-<../model/figures/graph_max_min.png, id=258, 462.528pt x 346.896pt>
+Package pdftex.def Info: ../model/figures/graph.png  used on input line 418.
+(pdftex.def)             Requested size: 483.69684pt x 362.79062pt.
+<../model/figures/graph_max_min.png, id=278, 462.528pt x 346.896pt>
 File: ../model/figures/graph_max_min.png Graphic file (type png)
 <use ../model/figures/graph_max_min.png>
-Package pdftex.def Info: ../model/figures/graph_max_min.png  used on input line 414.
-(pdftex.def)             Requested size: 455.24408pt x 341.44843pt.
- [15 <../model/figures/graph.png>] [16 <../model/figures/graph_max_min.png>] [17] (./Xiyu Bao Physics HL Internal Assessment.aux)
+Package pdftex.def Info: ../model/figures/graph_max_min.png  used on input line 419.
+(pdftex.def)             Requested size: 483.69684pt x 362.79062pt.
+ [15 <../model/figures/graph.png>] [16 <../model/figures/graph_max_min.png>] [17] [18]
+Overfull \hbox (41.65958pt too wide) in paragraph at lines 458--458
+\OT1/cmr/m/n/12 NR / rdonlyres / Mathematics / 18 -[] 03Spring2004 / B76E6F4F -[] 7B05 -[] 4DA0 -[] A5A5 -[] 03FA4ACCB6B2 /
+ []
 
-LaTeX Warning: There were multiply-defined labels.
-
+[19] (./Xiyu Bao Physics HL Internal Assessment.aux)
 Package rerunfilecheck Info: File `"Xiyu Bao Physics HL Internal Assessment".out' has not changed.
-(rerunfilecheck)             Checksum: DF76DA5E77DC66C89864E66BB76E87EA;2785.
+(rerunfilecheck)             Checksum: D5562ED7C13C39B88612DF2121F01DFE;3439.
 Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessment".run.xml'.
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26594 strings out of 476025
- 525421 string characters out of 5790016
- 1872388 words of memory out of 5000000
- 46659 multiletter control sequences out of 15000+600000
+ 26689 strings out of 476025
+ 527570 string characters out of 5790016
+ 1873388 words of memory out of 5000000
+ 46745 multiletter control sequences out of 15000+600000
  521653 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,83p,991b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (19 pages, 939468 bytes).
+Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (21 pages, 941454 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 309 compressed objects within 4 object streams
- 96 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 405 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,5 @@
 \documentclass[a4paper,12pt]{article}
+\usepackage[raggedrightboxes]{ragged2e}
 \usepackage{setspace}
 \doublespacing
 \usepackage[backend=biber,style=apa]{biblatex}
@@ -6,7 +7,7 @@
 \usepackage{sectsty}
 \usepackage{siunitx}
 \usepackage{graphicx}
-\usepackage[a4paper, total={3in, 9in}, textwidth=16cm,bottom=1in,top=1.4in]{geometry}
+\usepackage[a4paper, total={3in, 9in}, textwidth=17cm,bottom=1in,top=1.4in]{geometry}
 \usepackage[table,dvipsnames]{xcolor}
 \usepackage{amsmath}
 \usepackage{esvect}
@@ -89,16 +90,17 @@
 \newcommand{\pair}[2]{\paren{#1,\, #2}}
 \newcommand{\thcolor}{\cellcolor{Blue!25}}
 \newcommand{\chcolor}{\cellcolor{RedOrange!25}}
+\setlength{\headheight}{15pt}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\setlength{\belowcaptionskip}{-40pt}
+
 \usepackage{cleveref}
 \crefname{lemma}{Lemma}{Lemmas}
 \crefname{assumption}{Assumption}{Assumptions}
 \crefname{proposition}{Proposition}{Propositions}
-\setlength{\headheight}{15pt}
-\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 
 
 \begin{document}
-\setlength{\belowcaptionskip}{-40pt}
 
 
 \pagenumbering{arabic}
@@ -137,9 +139,9 @@ What is the relationship between the mass of a damped spring-block oscillator \{
 \subsection{Background Information}
 An ideal and rather theoretical spring-mass system oscillates indefinitely, producing an ongoing sine or cosine curve. In reality, there will be a damping force that can be as minimally consequential as air resistance or as observable as viscous drag in a liquid. Anyway, energy is dissipated to the surroundings and hence the amplitude will gradually decrease until the oscillation stops. The extent to which the viscous drag force, modeled by Stoke's law, diminishes the oscillatory motion submerged in water depends on the mass of the oscillator. This investigation delves into the relationship between the independent variable of mass $m$, and the dependent variable of the damping ratio $\zeta$. The mass set used in the system consists of spheres of equal radii but different densities.
 
-Stoke's law determines the drag force acting upon an object traveling through a fluid. It is proportional to the object's velocity and is given by the following per the Physics Data Booklet, in Newtons
+Stoke's Law determines the drag force acting upon an object traveling through a fluid -- proportional to the object's velocity and is the following per the Data Booklet, in Newtons
 $$F_d = 6\pi r \eta v $$
-This law holds iff. the object speed is low such that the flow to be \textit{laminar}, and the object is \textit{spherical}.
+This holds iff. the object's speed is low such that the flow is \textit{laminar}, and the object is \textit{spherical}.
 
 \begin{assumption}
   \label{as:1}
@@ -154,8 +156,7 @@ Moreover, the motion of the oscillator is modeled by the following differential 
 The damping ratio $\zeta$ is defined as the ratio of the damping coefficient to the critical damping coefficient --- the damping coefficient when the system returns to equilibrium without completing an oscillation. That is $$\zeta = \frac{b}{c_c} = \frac{b}{2mw_0}$$
 where $w_0$ is the natural frequency of the system
 \begin{align*}
-  w_0            & = \sqrt{\frac{k}{m}}   \\
-  \implies \zeta & = \frac{b}{2\sqrt{mk}}
+  w_0            = \sqrt{\frac{k}{m}}\implies \zeta & = \frac{b}{2\sqrt{mk}}
 \end{align*}
 
 \subsection{Hypothesis}
@@ -167,11 +168,11 @@ Suppose that the constant of proportionality of the damping force with speed is 
   \frac{\zeta^2}{m^{-1}} & = \frac{9\pi^2 r^2 \eta^2}{k}
 \end{align*}
 \begin{proposition}
-  \label{prop:1}
-  For a fixed sphere radius $r$ and viscosity $\eta$, \begin{equation}\label{eq:2}
+  For a fixed sphere radius $r$ and viscosity $\eta$, \begin{equation}
     \zeta^2 \propto m^{-1}
   \end{equation}
   Equivalently, the graph $\zeta^2/m^{-1}$ is ideally a straight line, although not necessarily passing through the origin, as some form of systematic errors are expected.
+  \label{prop:1}
 \end{proposition}
 
 \cref{prop:1} has a few dependencies that may affect its accuracy. It relies on \cref{as:1}, which, in turn, requires that the flow is laminar. This is a reasonable assumption given that the spheres are relatively small, and the speed is low; the potential for turbulence is insignificant and even if present, the impact is minimal. Furthermore, the buoyancy force on the object
@@ -185,13 +186,14 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
 \section{Research Design}
 
 \subsection{Variables}
+
 \begin{center}
-  \begin{tabular}{|p{0.15\textwidth}|p{0.15\textwidth}|p{0.3\textwidth}|p{0.3\textwidth}|}
+  \begin{tabular}{|p{0.14\textwidth}|p{0.11\textwidth}|p{0.33\textwidth}|p{0.3\textwidth}|}
     \hline
-    \multicolumn{2}{|c}{\thcolor Variables} & \multicolumn{1}{|c}{\thcolor Explanation} & \multicolumn{1}{|c|}{\thcolor Measurement}                                                                                                                                                                                                                             \\  \hline
-    Independent                             & Mass $m$                                  & The masses of the spherical metal bobs                                                                                                                                           & Measured using an electric balance, to two d.p. with uncertainty $\pm 0.01 \si{\g}$ \\
+    \multicolumn{2}{|c}{\thcolor Variables} & \multicolumn{1}{|c}{\thcolor Explanation} & \multicolumn{1}{|c|}{\thcolor Measurement}                                                                                                                                \\  \hline
+    Independent                             & Mass $m$                                  & The masses of the spherical metal bobs                                              & Measured using an electric balance, to two d.p. with uncertainty $\pm 0.01 \si{\g}$ \\
     \hline
-    Dependent                               & Peak Amplitude                            & At least 5 consecutive peaks, if the oscillation does not stop before the 5th peak, will have their heights measured. These datasets are used then to compute the damping ratio. & Ruler, with uncertainty $\pm 0.1\si{\cm}$                                           \\
+    Dependent                               & Peak Amplitude                            & 3 peaks will  be measured. These data points are used to compute the damping ratio. & Ruler, with uncertainty $\pm 0.1\si{\cm}$                                           \\
     \hline
   \end{tabular}
   \label{tab:1}
@@ -203,28 +205,30 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
     \textwidth}|}
 
     \hline
-    \multicolumn{3}{|c|}{\thcolor Control Variables}                                                                                                                                                                                                                                           \\ \hline
-    \multicolumn{1}{|c|}{Variable}       & \multicolumn{1}{|c|}{Rationale}                                     & \multicolumn{1}{|c|}{Means of Control}                                                                                                                                        \\ \hline
-    Liquid viscosity                     & To keep the drag coefficient per Stoke's Law constant               & Using \textbf{water from the same source} throughout the experiment, and keep the \textbf{room temperature} constant by turning off the air conditioning. Unknown uncertainty \\ \hline
-    Radius of the sphere                 & This is so that the drag force, per Stoke's law, is constant        & Using a set of spherical masses of the same diameter                                                                                                                          \\ \hline
-    Spring constant                      & This is so that the natural frequency of the system is constant     & Using the same spring throughout the experiment. Read from the label of on the box.                                                                                           \\ \hline
-    Initial amplitude, $A_0 = 5\si{\cm}$ & So that the damping ratio is not affected by the initial conditions & Pulling the spring down by equal distances for every mass.  Measured by a ruler and hence has uncertainty $\pm 0.1\si{\cm}$                                                   \\ \hline
-    Damping coefficient                  & Linearizes relationship between damping ratio and mass              & Previous means of control keep fluid viscosity and object dimensions constant, so the damping coefficient, which depend on these, will be constant.                           \\
+    \multicolumn{3}{|c|}{\thcolor Control Variables}                                                                                                                                                                                                                                                                                                        \\ \hline
+    \multicolumn{1}{|c|}{Variable}          & \multicolumn{1}{|c|}{Rationale}                                     & \multicolumn{1}{|c|}{Means of Control}                                                                                                                                                                                                  \\ \hline
+    Liquid viscosity   $0.85$               & To keep the drag coefficient per Stoke's Law constant               & Using \textbf{water from the same source} throughout the experiment, and keep the \textbf{room temperature} constant by turning off the air conditioning. In fact, during the experiment, the room temperature was $27\degsym \text{C}$ \\ \hline
+    Radius of the sphere, $r = 2.5\si{\cm}$ & This is so that the drag force, per Stoke's law, is constant        & Using spherical masses of the same diameter                                                                                                                                                                                             \\ \hline
+    Spring constant, $k = 100\si{\N\per\m}$ & This is so that the natural frequency of the system is constant     & Using the same spring throughout the experiment. Read from the label on the box.                                                                                                                                                        \\ \hline
+    Initial amplitude, $A_0 = 5\si{\cm}$    & So that the damping ratio is not affected by the initial conditions & Pulling the spring down by equal distances for every mass.  Measured by a ruler with $\pm 0.1\si{\cm}$                                                                                                                                  \\ \hline
+    Damping coefficient                     & Linearizes relationship between damping ratio and mass              & Previous means of control keep fluid viscosity and object dimensions constant, so the damping coefficient will be constant.                                                                                                             \\
     \hline
   \end{tabular}
   \label{tab:2}
   \captionof{table}{Control variables}
 \end{center}
 
+
+\pagebreak
+
 \subsection{Apparatus and Materials}
 \img{figs/setup.png}{0.8}{The experimental setup}{setup}
 \begin{outline}[enumerate]
   \1 Ruler ($\pm 0.1\si{\cm}$)
   \1 Electric balance ($\pm 0.01\si{\g}$)
-  \1 Spring with spring constant $k = ???\si{\N\per\m}$
-  \1 Mass set with five spherical masses of diameter $???\si{\cm}$, and masses
-  \2 $m_1 = ???\si{\g}$
-  \1 Beaker ([dimensions here])
+  \1 Spring with spring constant $k = 100\si{\N\per\m}$
+  \1 Mass set with five spherical masses of diameter $2.5\si{\cm}$
+  \1 Beaker
   \1 Tap water ([volume here])
   \1 Camera --- keeps a record for future reference
   \1 Thermometer --- to ensure that the liquid stays at a constant temperature
@@ -235,7 +239,7 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
 \subsection{Methodology}
 
 \begin{outline}[enumerate]
-  \1 Take a piece of metal wire, and cut into segments of $3\si{\cm}$ in length. [\textcolor{orange}{may change to scotch tape}]
+  \1 Take a scrotch tape, and cut into segments of $8\si{\cm}$ in length.
   \1 Arrange the masses in increasing order, i.e. $m_1 < m_2 < ... < m_n$, where $n$ is the number of masses in the mass set.
   \1 Fill in the beaker with $A\si{\mL}$ of tap water
   \1 Measure the temperature of the water, and record as $T_0$
@@ -244,7 +248,7 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
   \1 Place the beaker directly under the clamp such that the clamp lies at the center of the beaker in bird's eye view.
   \1 For $i$ from 1 to $n$ inclusive, repeat the following
   \2 Take the $i$th mass, $m_i$, and attach its hook to the spring.
-  \2 Take a piece of metal wire, wrap it as many times as possible across the diagonal (explanation to be improved), fix and reinforce the connection between the mass and the spring.
+  \2 Take a piece of tape, wrap it as many times as possible across the point of connection.
   \2 Attach the spring-mass pair to the clamp and let the mass hang freely.
   \2 Adjust the height of the clamp so that the mass is submerged in the water.
   \2 Measure the height of the mass from the surface of the desk, and record as $h_0$
@@ -260,6 +264,7 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
   \3 Record the respective heights above the desk as $\{h_k\}^{5}_{k=1}$.
   \3 Then the corresponding peak amplitudes are $A_k = h_0 - h_{k}$
   \2 Take the average values across the three trials for each peak amplitude.
+  \2 Measure the water temperature and wait until it stays constant at $27\degsym \text{C}$.
 \end{outline}
 
 \subsection{Preliminary Trials}
@@ -271,10 +276,10 @@ Preliminary trials were conducted to identify and resolve potential challenges, 
 \begin{center}
   \begin{tabular}{|P{0.19\textwidth}|p{0.71\textwidth}|}
     \hline
-    \thcolor Consideration & \multicolumn{1}{c|}{\thcolor {Relevance and Mitigation}         }                                                                                                                                                                                                                                 \\ \hline
-    Safety                 & All valuable assets are kept away from the experimental setup to prevent accidental detachments of the spring-mass system leading to the mass being thrown out and causing damage. Moreover, the amplitude was kept low to prevent fierce movements that can break the beaker or computer camera. \\ \hline
-    Ethical                & No use of animals or human bodies involved. However, the recording selects the location and angle that avoids the storage and exposure of any personal information or objects of the lab owner, ensuring maximum privacy protection.                                                              \\ \hline
-    Environmental          & The entire experiment aims to reuse the same water throughout to minimize water wastage.    Furthermore, the spring was carefully pulled to prevent it from passing its elastic limit and become unusable for future experiments.                                                                 \\ \hline
+    \thcolor Consideration & \multicolumn{1}{c|}{\thcolor {Relevance and Mitigation}         }                                                                                                                                                                                                                                   \\ \hline
+    Safety                 & All valuable assets are kept away from the experimental setup to prevent accidental detachments of the spring-mass system leading to the mass being thrown out and causing damage. Moreover, the amplitude was kept low to prevent fierce movements that could break the beaker or computer camera. \\ \hline
+    Ethical                & No use of animals or human bodies involved. However, the recording selects the location and angle that avoids the storage and exposure of any personal information or objects of the lab owner, ensuring maximum privacy protection.                                                                \\ \hline
+    Environmental          & The entire experiment aims to reuse the same water throughout to minimize water wastage.    Furthermore, the spring was carefully pulled to prevent it from passing its elastic limit and becoming unusable for future experiments.                                                                 \\ \hline
   \end{tabular}
   \label{tab:3}
   \captionof{table}{Risk Assessment}
@@ -402,7 +407,7 @@ Running the above script on the dataset produces the following table of uncertai
       86.51                                     & 11.494                           & 0.001321 $\approx$ 0.001                & 2.42                                         \\ \hline
       93.47                                     & 10.753                           & 0.001156 $\approx$ 0.001                & 1.92                                         \\ \hline
     \end{tabular}
-    \label{tab:5}
+    \label{tab:7}
     \captionof{table}{Absolute uncertainties}
     \egroup
   \end{center}
@@ -413,16 +418,43 @@ Running the above script on the dataset produces the following table of uncertai
 \img{../model/figures/graph.png}{1}{Graph of $\zeta^2$ against $m^{-1}$, with best-fit line and predicted line}{graph1}
 \img{../model/figures/graph_max_min.png}{1}{Graph of $\zeta^2$ against $m^{-1}$ --- literature review}{graph2}
 
-The two graphs above show the relationship between the damping ratio squared and the inverse of the mass from the resultant dataset, with error bars plotted. The first graph, \cref{fig:graph1}, shows a scatter plot of the data points from \cref{tab:5}, with the best-fit line and the line predicted using Stoke's Law stated in the hypothesis proposition section. The data points suggest a linear relationship between $\zeta^2$ and $m^{-1}$, with the Pearson correlation coefficient $r = 0.684$, suggesting a relatively strong linear trend.
+The two graphs above show the relationship between the damping ratio squared and the inverse of the mass from the resultant dataset, with error bars plotted. The first graph, \cref{fig:graph1}, shows a scatter plot of the data points from \cref{tab:5}, with the best-fit line and the line predicted using Stoke's Law stated in the hypothesis proposition section. The data points suggest a linear relationship between $\zeta^2$ and $m^{-1}$, with the Pearson correlation coefficient $r = 0.684$. The second graph, \cref{fig:graph2}, shows the prediction line in comparison to the maximum and minimum-slope lines resulting from the propagation of uncertainty --- indeed, the theoretical prediction does lie within the error bars of the data points.
 
 \section{Conclusion}
 
+This essay delved into the effect of mass $m$ on the damping ratio $\zeta$ of a damped spring-block oscillator submerged in water, with the hypothesis that $$\zeta^2 \propto m^{-1}$$ The results from the experiment suggest a linear relationship between the damping ratio squared and the inverse of the mass, with a Pearson correlation coefficient of 0.684, indicating a relatively strong linear trend. The theoretical prediction line falls within the interval of the maximum and minimum slopes due to the uncertainties in measurements, supporting the hypothesis that the damping ratio squared is inversely proportional to the mass, within the experimented range of 52.48 to 93.47 grams.
+
+%wc: 1848%
+
+The observation that the relationship is not perfectly linear is a consequence of the uncertainties that arise from the limitations of measuring devices and human errors. One primary source of random error is the unintentional but inevitable extra force applied when releasing the spring in the liquid. Nonetheless, the mass set did not produce anomolies and massive systematic errors, suggesting that the environment and the experimental setup were controlled effectively. \cref{prop:1} suggested that the expected gradient, $m_0$ would be \begin{align*}
+  m_0 & =    \frac{9\pi^2r^2\eta^2}{k}               \\
+      & =        \frac{9\pi^2(0.025)^2(0.85)^2}{100} \\
+      & \approx  4.011 \times 10^{-4}
+\end{align*}
+
+The minimum and maximum slopes are $-3.339\times 10^{-4}$ and $9.109\times 10^{-4}$ respectively, with the experimental gradient in between. This shows that the drag force on the oscillator in water can be estimated using Stoke's Law. The error propagation does create rather significant error bars due to the already small values of $\zeta^2$, particularly for smaller masses. However, this does accept the theoretical value and is expected since $\zeta^2$ is very sensitive to a change in mass.
+
 \subsection{Evaluation}
 
-\subsection{Extensibility}
+\subsubsection{Strengths}
+
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \thcolor Strength & \thcolor Observations \\ \hline
+  \end{tabular}
+\end{center}
+
+\subsubsection{Weaknesses --- Random Errors}
+
+\subsubsection{Weaknesses --- Systematic Errors}
+
+\subsubsection{Extensions}
 
 \pagebreak
 
-\printbibliography
+\printbibliography[
+  heading=bibintoc,
+  title={Bibliography}
+]
 
 \end{document}
