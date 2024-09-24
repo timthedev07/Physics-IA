@@ -24,9 +24,11 @@
 \usepackage{subcaption}
 \usepackage{esdiff}
 \usepackage{setspace}
+\usepackage[nameinlink]{cleveref}
 \newtheorem{lemma}{Lemma}
 \newtheorem{proposition}{Proposition}
 \newtheorem{assumption}{Assumption}
+\newtheorem{definition}{Definition}
 \doublespacing
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 \let\oldsi\si
@@ -45,8 +47,8 @@
   colorlinks,
   citecolor=black,
   filecolor=black,
-  linkcolor=black,
-  urlcolor=black
+  linkcolor=blue,
+  urlcolor=blue
 }
 \newcommand{\lb}{\\[8pt]}
 \newenvironment*{cell}[1][]{\begin{tabular}[c]{@{}c@{}}}{\end{tabular}}
@@ -93,12 +95,13 @@
 \newcommand{\chcolor}{\cellcolor{RedOrange!25}}
 \setlength{\headheight}{15pt}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
-\setlength{\belowcaptionskip}{-40pt}
+\setlength{\belowcaptionskip}{-10pt}
 
 \usepackage{cleveref}
 \crefname{lemma}{Lemma}{Lemmas}
 \crefname{assumption}{Assumption}{Assumptions}
 \crefname{proposition}{Proposition}{Propositions}
+\crefname{definition}{Definition}{Definitions}
 
 
 \begin{document}
@@ -112,13 +115,13 @@
   \begin{center}
     \vspace*{3cm}
 
-    {\textbf{\Large{What is the relationship between the mass of a damped spring-block oscillator \{52.48g, 60.94g, 69.72g, 86.51g, 93.47g\} and the damping ratio?}}}
+    {\textbf{\Large{What is the relationship between the mass of a damped spring-block oscillator \{52.48g, 60.94g, 69.72g, 86.51g, 93.47g, 113.27g\} and the damping ratio?}}}
 
 
 
     \vspace{4cm}
 
-    Word count: TBD
+    Word count: 2140
 
   \end{center}
 \end{titlepage}
@@ -135,19 +138,19 @@ This essay extends the investigation of simple harmonic motion by studying the d
 
 
 \subsection{The Research Question}
-What is the relationship between the mass of a damped spring-block oscillator \{52.48g, 60.94g, 69.72g, 86.51g, 93.47g\} and the damping ratio?
+What is the relationship between the mass of a damped spring-block oscillator \{52.48g, 60.94g, 69.72g, 86.51g, 93.47g, 113.27g\} and the damping ratio?
 
 \subsection{Background Information}
-An ideal and rather theoretical spring-mass system oscillates indefinitely, producing an ongoing sine or cosine curve. In reality, there will be a damping force that can be as minimally consequential as air resistance or as observable as viscous drag in a liquid. Anyway, energy is dissipated to the surroundings and hence the amplitude will gradually decrease until the oscillation stops. The extent to which the viscous drag force, modeled by Stoke's law, diminishes the oscillatory motion submerged in water depends on the mass of the oscillator. This investigation delves into the relationship between the independent variable of mass $m$, and the dependent variable of the damping ratio $\zeta$. The mass set used in the system consists of spheres of equal radii but different densities.
+An ideal and rather theoretical spring-mass system oscillates indefinitely, producing an ongoing sine or cosine curve. In reality, there will be a damping force that can be as minimally consequential as air resistance or as observable as viscous drag in a liquid. Anyway, energy is dissipated to the surroundings and hence the amplitude will gradually decrease until the oscillation stops. The extent to which the viscous drag force, modeled by Stoke's law, diminishes the oscillatory motion submerged in water depends on the mass, radius, and velocity of the oscillator, and the viscosity of the liquid at a given temperature. This investigation delves into the relationship between the independent variable of mass $m$, and the dependent variable of the damping ratio $\zeta$. The mass set used in the system consists of spheres of equal radii but different densities.
 
 Stoke's Law determines the drag force acting upon an object traveling through a fluid -- proportional to the object's velocity and is the following per the Data Booklet, in Newtons
 $$F_d = 6\pi r \eta v $$ where
 \begin{itemize}
-  \item $r$ is the radius of the sphere
-  \item $\eta$ is the viscosity of the fluid at some temperature
-  \item $v$ is the velocity of the object in the fluid
+  \item $r$ (m) is the radius of the sphere
+  \item $\eta$ $(\si{\N\s\per\m\squared})$ is the viscosity of the fluid at some temperature
+  \item $v$ $(\si{\m\per\s})$ is the velocity of the object in the fluid
 \end{itemize}
-This holds iff. the object's speed is low such that the flow is \textit{laminar}, and the object is \textit{spherical}.
+This holds if and only if the object's speed is low such that the flow is \textit{laminar}, and the object is \textit{spherical}.
 
 \begin{assumption}
   \label{as:1}
@@ -216,13 +219,13 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
     \textwidth}|}
 
     \hline
-    \multicolumn{3}{|c|}{\thcolor Control Variables}                                                                                                                                                                                                                                                                                                        \\ \hline
-    \multicolumn{1}{|c|}{Variable}          & \multicolumn{1}{|c|}{Rationale}                                     & \multicolumn{1}{|c|}{Means of Control}                                                                                                                                                                                                  \\ \hline
-    Liquid viscosity   $0.85$               & To keep the drag coefficient per Stoke's Law constant               & Using \textbf{water from the same source} throughout the experiment, and keep the \textbf{room temperature} constant by turning off the air conditioning. In fact, during the experiment, the room temperature was $27\degsym \text{C}$ \\ \hline
-    Radius of the sphere, $r = 2.5\si{\cm}$ & This is so that the drag force, per Stoke's law, is constant        & Using spherical masses of the same diameter                                                                                                                                                                                             \\ \hline
-    Spring constant, $k = 100\si{\N\per\m}$ & This is so that the natural frequency of the system is constant     & Using the same spring throughout the experiment. Read from the label on the box.                                                                                                                                                        \\ \hline
-    Initial amplitude, $A_0 = 5\si{\cm}$    & So that the damping ratio is not affected by the initial conditions & Pulling the spring down by equal distances for every mass.  Measured by a ruler with $\pm 0.1\si{\cm}$                                                                                                                                  \\ \hline
-    Damping coefficient                     & Linearizes relationship between damping ratio and mass              & Previous means of control keep fluid viscosity and object dimensions constant, so the damping coefficient will be constant.                                                                                                             \\
+    \multicolumn{3}{|c|}{\thcolor Control Variables}                                                                                                                                                                                                                                                                                                                      \\ \hline
+    \multicolumn{1}{|c|}{Variable}                        & \multicolumn{1}{|c|}{Rationale}                                     & \multicolumn{1}{|c|}{Means of Control}                                                                                                                                                                                                  \\ \hline
+    Liquid viscosity   $0.85$ $(\si{\N\s\per\m\squared})$ & To keep the drag coefficient per Stoke's Law constant               & Using \textbf{water from the same source} throughout the experiment, and keep the \textbf{room temperature} constant by turning off the air conditioning. In fact, during the experiment, the room temperature was $27\degsym \text{C}$ \\ \hline
+    Radius of the sphere, $r = 2.5\si{\cm}$               & This is so that the drag force, per Stoke's law, is constant        & Using spherical masses of the same diameter                                                                                                                                                                                             \\ \hline
+    Spring constant, $k = 100\si{\N\per\m}$               & This is so that the natural frequency of the system is constant     & Using the same spring throughout the experiment. Read from the label on the box.                                                                                                                                                        \\ \hline
+    Initial amplitude, $A_0 = 5\si{\cm}$                  & So that the damping ratio is not affected by the initial conditions & Pulling the spring down by equal distances for every mass.  Measured by a ruler with $\pm 0.1\si{\cm}$                                                                                                                                  \\ \hline
+    Damping coefficient                                   & Linearizes relationship between damping ratio and mass              & Previous means of control keep fluid viscosity and object dimensions constant, so the damping coefficient will be constant.                                                                                                             \\
     \hline
   \end{tabular}
   \label{tab:2}
@@ -238,7 +241,7 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
   \1 Ruler ($\pm 0.1\si{\cm}$)
   \1 Electric balance ($\pm 0.01\si{\g}$)
   \1 Spring with spring constant $k = 100\si{\N\per\m}$
-  \1 Mass set with five spherical masses of diameter $2.5\si{\cm}$
+  \1 Mass set with six spherical masses of diameter $2.5\si{\cm}$
   \1 Beaker
   \1 Tap water
   \1 Camera --- keeps a record for future reference
@@ -250,9 +253,9 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
 \subsection{Methodology}
 
 \begin{outline}[enumerate]
-  \1 Take a scrotch tape, and cut into segments of $8\si{\cm}$ in length.
+  \1 Take a scrotch tape, and cut into segments of $8$ $\si{\cm}$ in length.
   \1 Arrange the masses in increasing order, i.e. $m_1 < m_2 < ... < m_n$, where $n$ is the number of masses in the mass set.
-  \1 Fill in the beaker with $A\si{\mL}$ of tap water
+  \1 Fill in the beaker with $A$ $\si{\mL}$ of tap water
   \1 Measure the temperature of the water, and record as $T_0$
   \1 Attach the clamp to the retort stand.
   \1 Lean the ruler vertically against the retort stand.
@@ -322,6 +325,7 @@ Let $m$ denote the mass of a bob, and $A_n$ denote the $n$-th peak height.
         69.72                                                                      & 3.1                                                            & 3.1                                                            & 3.1                                                            & 3.1 & 3.1 & 1.9 & 2.0 & 1.8 & 1.9 & 1.9 & 1.2 & 1.2 & 1.2 & 1.3 & 1.2 \\ \hline
         86.51                                                                      & 3.3                                                            & 3.3                                                            & 3.3                                                            & 3.3 & 3.3 & 2.1 & 2.1 & 2.2 & 2.1 & 2.1 & 1.4 & 1.4 & 1.4 & 1.4 & 1.3 \\ \hline
         93.47                                                                      & 3.5                                                            & 3.3                                                            & 3.4                                                            & 3.3 & 3.5 & 2.4 & 2.2 & 2.4 & 2.2 & 2.2 & 1.5 & 1.5 & 1.5 & 1.5 & 1.5 \\ \hline
+        113.27                                                                     & 3.5                                                            & 3.5                                                            & 3.7                                                            & 3.6 & 3.5 & 2.3 & 2.4 & 2.4 & 2.5 & 2.3 & 1.6 & 1.4 & 1.5 & 1.7 & 1.4 \\ \hline
       \end{tabular}}
     \label{tab:4}
     \captionof{table}{Raw data of peak amplitudes}
@@ -335,10 +339,14 @@ Let $m$ denote the mass of a bob, and $A_n$ denote the $n$-th peak height.
 
 \subsubsection{Transformation}
 
-Using the \textit{logarithmic decrement} method per \Citeauthor{inman_2008_engineering} (\citeyear{inman_2008_engineering})
-$$\delta = \ln\paren{\frac{A_n}{A_{n+1}}} \text{ and } \delta = \frac{2\pi \zeta}{\sqrt{1 - \zeta^2}}$$ where $A_n$ and $A_{n + 1}$ denote any pair of consecutive peaks' heights.
+For the sake of consistency, let us start with the following definition.
 
-\noindent It then follows that
+\begin{definition}
+  Let the tuple $(i, j)$ denote the pair of peaks at $i$ and $j$ respectively, with $i < j$.
+\end{definition}
+
+\noindent Using the \textit{logarithmic decrement} method per \Citeauthor{inman_2008_engineering} (\citeyear{inman_2008_engineering})
+$$\delta_{(i, j)} = (j-i)\ln\paren{\frac{A_i}{A_{j}}} \text{ and } \delta = \frac{2\pi \zeta}{\sqrt{1 - \zeta^2}}$$ where $A_i$ and $A_j$ denote the peak height measurements at the $i$-th and $j$-th peaks respectively. It then follows that
 \begin{align*}
   \delta^2                   & = \frac{4\pi^2 \zeta^2}{1 - \zeta^2}      \\
   \delta^2 - \delta^2\zeta^2 & = 4\pi^2\zeta^2                           \\
@@ -346,10 +354,9 @@ $$\delta = \ln\paren{\frac{A_n}{A_{n+1}}} \text{ and } \delta = \frac{2\pi \zeta
   \zeta                      & = \frac{\delta}{\sqrt{4\pi^2 + \delta^2}}
 \end{align*}
 
-A value of $\zeta$ is calculated for each pair of possible peaks to most accurately identify the damping ratio. This step is encapsulated in the following Python snippet that belongs to an overall script for processing the data and generating the graph.
+$\zeta$, by definition, may be considered as a function of a pair of peaks. This function is applied to \textbf{every pair}, producing a set of values of $\zeta$, across which we will take the average to most accurately identify the damping ratio --- computing $\zeta$ from a mere peak-pair poses vulnerability to random error and lacks reliability. This step is encapsulated in the Python snippet attached in the appendix section at \cref{app:1}, which belongs to an overall script for processing the data and generating the graph.
 
-\img{figs/code/damping.png}{0.8}{Calculating the damping ratio with pandas in Python}{damping_code}
-\noindent Note that $\overline{A_i}$ denotes the average value of the $i$-th peak across the five trials.
+Note that $\overline{A_i}$ denotes the average value of the $i$-th peak across the five repetitions.
 
 \begin{table}[htbp]
   \begin{center}
@@ -363,6 +370,7 @@ A value of $\zeta$ is calculated for each pair of possible peaks to most accurat
       69.72                                       & 3.1                                          & 1.9                                          & 1.2                                          & 5.67                                  \\ \hline
       86.51                                       & 3.3                                          & 2.1                                          & 1.4                                          & 4.63                                  \\ \hline
       93.47                                       & 3.4                                          & 2.3                                          & 1.5                                          & 4.22                                  \\ \hline
+      113.27                                      & 3.6                                          & 2.4                                          & 1.5                                          & 4.83                                  \\ \hline
     \end{tabular}
     \label{tab:5}
     \captionof{table}{Processed data}
@@ -374,13 +382,14 @@ A value of $\zeta$ is calculated for each pair of possible peaks to most accurat
 
 \subsubsection{Uncertainty Analysis}
 
-Let $\Delta x$ denote the absolute uncertainty of $x$. For $\Delta x \ll x$, the uncertainty of $f(x)$ is given by the following \parencite{vacher_2001_the}
-$$\Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x$$Let $i$, $j$ such that $i < j$ denote the indices of any two peaks, and also let $\gamma = \dfrac{A_i}{A_{i+1}}$, the following table summarizes the uncertainties involved in the calculation of the damping ratio from a pair of peaks indexed with $(i, j)$.
+In this section, one will learn about how uncertainties propagate through the calculation of the damping ratio.\lb
+We will adopt the following method for the computation of uncertainties: Let $\Delta x$ denote the absolute uncertainty of $x$. For $\Delta x \ll x$, the uncertainty of $f(x)$ is given by the following \parencite{vacher_2001_the}
+$$\Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x$$Let $i$, $j$ be the indices of any pair of peaks such that $i < j$, and also let $\gamma_{i, j} = \dfrac{A_i}{A_{j}}$, the following table summarizes the uncertainties involved in the calculation of the damping ratio from a pair of peaks indexed with $(i, j)$.
 
-\begin{table}[htbp]
+\begin{table}[H]
   \begin{center}
     \bgroup
-    \renewcommand{\arraystretch}{2}
+    \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|c|c|c|}
       \hline
       \thcolor {Variable}       & \thcolor Calculation                      & \thcolor Absolute Uncertainty                                                                      \\ \hline
@@ -399,12 +408,11 @@ $$\Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x$$Let $i$, $j$ such that $i < 
 \end{table}
 
 \vspace{\baselineskip}
-To implement the above logic in Python, the previous code snippet in \cref{fig:damping_code} is extended to include the uncertainty calculations.
+To implement the above logic in Python, the previous code snippet in \cref{fig:damping_code} under \cref{app:1} is extended to include the uncertainty calculations. See \cref{app:2} for the full code snippet.
 
-\img{figs/code/unc.png}{0.9}{Calculating the damping ratio with uncertainties in Python}{unc_code}
 
-Running the above script on the dataset produces the following table of uncertainties.
 
+Running the script again yields the following table of uncertainties:
 \begin{table}[htbp]
   \begin{center}
     \bgroup
@@ -412,11 +420,12 @@ Running the above script on the dataset produces the following table of uncertai
     \begin{tabular}{|P{0.16\textwidth}|P{0.25\textwidth}|P{0.25\textwidth}|P{0.145\textwidth}|}
       \hline
       \thcolor {$\Delta m/10^{3}$ ($\si{\kg}$)} & \thcolor $m^{-1} (\si{\per\kg})$ & \thcolor $\Delta m^{-1} (\si{\per\kg})$ & \thcolor $\Delta \zeta^2/10^{-3}$ (unitless) \\ \hline
-      52.48                                     & 19.230                           & 0.003698 $\approx$ 0.004                & 3.35                                         \\ \hline
-      60.94                                     & 16.393                           & 0.002687 $\approx$ 0.003                & 2.53                                         \\ \hline
-      69.72                                     & 14.285                           & 0.002041 $\approx$ 0.002                & 2.71                                         \\ \hline
-      86.51                                     & 11.494                           & 0.001321 $\approx$ 0.001                & 2.42                                         \\ \hline
-      93.47                                     & 10.753                           & 0.001156 $\approx$ 0.001                & 1.92                                         \\ \hline
+      52.48                                     & 19.23                            & 0.003698 $\approx$ 0.00                 & 3.35                                         \\ \hline
+      60.94                                     & 16.39                            & 0.002687 $\approx$ 0.00                 & 2.53                                         \\ \hline
+      69.72                                     & 14.29                            & 0.002041 $\approx$ 0.00                 & 2.71                                         \\ \hline
+      86.51                                     & 11.49                            & 0.001321 $\approx$ 0.00                 & 2.42                                         \\ \hline
+      93.47                                     & 10.75                            & 0.001156 $\approx$ 0.00                 & 1.92                                         \\ \hline
+      113.27                                    & 8.850                            & 0.000783 $\approx$ 0.00                 & 2.01                                         \\ \hline
     \end{tabular}
     \label{tab:7}
     \captionof{table}{Absolute uncertainties}
@@ -433,7 +442,7 @@ The two graphs above show the relationship between the damping ratio squared and
 
 \section{Conclusion}
 
-This essay delved into the effect of mass $m$ on the damping ratio $\zeta$ of a damped spring-block oscillator submerged in water, with the hypothesis that $$\zeta^2 \propto m^{-1}$$ The results from the experiment suggest a linear relationship between the damping ratio squared and the inverse of the mass, with a Pearson correlation coefficient of 0.684, indicating a relatively strong linear trend. The theoretical prediction line falls within the interval of the maximum and minimum slopes due to the uncertainties in measurements, supporting the hypothesis that the damping ratio squared is inversely proportional to the mass, within the experimented range of 52.48 to 93.47 grams.
+This essay delved into the effect of mass $m$ on the damping ratio $\zeta$ of a damped spring-block oscillator submerged in water, with the hypothesis that $$\zeta^2 \propto m^{-1}$$ The results from the experiment suggest a linear relationship between the damping ratio squared and the inverse of the mass, with a Pearson correlation coefficient of 0.700, indicating a relatively strong linear trend. The theoretical prediction line falls within the interval of the maximum and minimum slopes due to the uncertainties in measurements, supporting the hypothesis that the damping ratio squared is inversely proportional to the mass, within the experimented range of 52.48 to 113.27 grams.
 
 %wc: 1848%
 
@@ -454,7 +463,7 @@ The minimum and maximum slopes are $-3.339\times 10^{-4}$ and $9.109\times 10^{-
     \hline
     \thcolor Strength                                   & \thcolor Observations                                                                                                                                                                                                                                                                                          \\ \hline
     Attempt to minimize random error in peak amplitudes & Across the three peaks, all possible pairs were used to calculate a value of $\zeta$, across all of them an average is taken. This produces the $\overline{\zeta}$ that is closer to the true value for each possible oscillation, as the average measurement is less susceptible to random forces introduced. \\ \hline
-    Error minimization procedures                       & The experiment was designed to minimize random and systematic errors. Taking five trials and computing the average builds upon the attempt to minimize error by averaging pairs across three peaks, further diminishing the impact of potential anomalies and outliers in the dataset.                         \\ \hline
+    Error minimization procedures                       & The experiment was designed to minimize random and systematic errors. Taking fix trials and computing the average builds upon the attempt to minimize error by averaging pairs across three peaks, further diminishing the impact of potential anomalies and outliers in the dataset.                          \\ \hline
     Consistency                                         & The entire experiment followed a sequence of algorithmic and rigid instructions to ensure that each trial was conducted in the same conditions.                                                                                                                                                                \\ \hline
     Preliminary tests                                   & Preliminary tests were conducted to identify potential challenges and refine the experimental conditions, ensuring that the final experiment was conducted under optimal conditions.                                                                                                                           \\ \hline
   \end{tabular}
@@ -498,5 +507,18 @@ Alternatively, one may also explore the impact of varying the spring constant on
   heading=bibintoc,
   title={Bibliography}
 ]
+
+\pagebreak
+
+\section{Appendix}
+
+\subsection{Python Script for Data Processing}\label{app:1}
+\img{figs/code/damping.png}{0.95}{Calculating the damping ratio with pandas in Python}{damping_code}
+
+\pagebreak
+
+\subsection{Extended Script with Uncertainty Propagation}\label{app:2}
+
+\img{figs/code/unc.png}{0.75}{Calculating the damping ratio with uncertainties in Python}{unc_code}
 
 \end{document}

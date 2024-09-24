@@ -5,13 +5,21 @@ from os import path
 
 SCRIPT_FILE_DIR = path.dirname(path.realpath(__file__))
 DATADIR = path.join(SCRIPT_FILE_DIR, "../data/peaks")
-r = 0.025
-masses = np.array([52.48, 60.94, 69.72, 86.51, 93.47]) / 1000
+r = 0.025  # meter
+masses = np.array([52.48, 60.94, 69.72, 86.51, 93.47, 113.27]) / 1000
 η = 0.85
-A_0 = 0.05
+A_0 = 0.05  # meter
 K = 100
 
 TRIAL_NUM = 5
+
+
+def theoretical():
+    for mass in masses:
+        ζ = math.sqrt((9 * (math.pi) ** 2 * r**2 * η**2) / (mass * K))
+        ratio = (2 * math.pi * ζ) / (math.sqrt(1 - ζ**2))
+        peaks = [A_0 * (ratio) ** i for i in range(1, 4)]
+        print(f"Mass: {mass} --- Peaks:", np.array(peaks))
 
 
 # Load the raw data
@@ -43,7 +51,7 @@ def main():
                 r += f" & {dfs[k].iloc[i, 2 + j]}"
         print(r + " \\\\ \\hline")
 
-    pass
+    theoretical()
 
 
 if __name__ == "__main__":

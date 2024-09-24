@@ -166,10 +166,10 @@ def bestfit(plt, x, y, x_0, y_0, m, b):
     style = {"color": "brown"}
     r = np.corrcoef(x_0, y_0)
     (bf,) = plt.plot(x, y, label=f"Best fit line")
-    t1 = plt.text(16.5, y_0[len(y_0) - 1] + 0.0012, f"$r = {r[0][1]:.3f}$", style)
+    t1 = plt.text(16.5, y_0[len(y_0) - 1] - 0.002, f"$r = {r[0][1]:.3f}$", style)
     t2 = plt.text(
         15.5,
-        y_0[len(y_0) - 1],
+        y_0[len(y_0) - 1] - 0.001,
         f"$y = {fmt(m)}x + {b:.3f}$",
         style,
     )
@@ -243,6 +243,7 @@ def main():
 
     # prepare data
     df = processData()
+    print(df)
 
     x = df["Mass Reciprocal"]
     y = df["Zeta Squared"]
