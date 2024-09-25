@@ -337,7 +337,7 @@ Let $m$ denote the mass of a bob, and $A_n$ denote the $n$-th peak height.
 
 \subsection{Data Processing}
 
-\subsubsection{Transformation}
+\subsubsection{Transformation}\label{subsubsec:transformation}
 
 For the sake of consistency, let us start with the following definition.
 
@@ -384,7 +384,15 @@ Note that $\overline{A_i}$ denotes the average value of the $i$-th peak across t
 
 In this section, one will learn about how uncertainties propagate through the calculation of the damping ratio.\lb
 We will adopt the following method for the computation of uncertainties: Let $\Delta x$ denote the absolute uncertainty of $x$. For $\Delta x \ll x$, the uncertainty of $f(x)$ is given by the following \parencite{vacher_2001_the}
-$$\Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x$$Let $i$, $j$ be the indices of any pair of peaks such that $i < j$, and also let $\gamma_{i, j} = \dfrac{A_i}{A_{j}}$, the following table summarizes the uncertainties involved in the calculation of the damping ratio from a pair of peaks indexed with $(i, j)$.
+
+\begin{equation}\label{eq:uncertainty}
+  \Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x
+\end{equation}
+
+From the raw data of the peak heights to $\zeta$, as seen in the data transformation section at \cref{subsubsec:transformation}, the initial measurements have gone through a series of functions to finally arrive at a value for $\zeta$. Thus, to visualize the propagation of uncertainty, we will consider how the uncertainty is propagated in each individual step of the transformation linearly. The highlighted rows represent the final stages of the uncertainty propagation for the independent and dependent variables respectively.
+
+
+Let $i$, $j$ be the indices of any pair of peaks such that $i < j$, and also let $\gamma_{i, j} = \dfrac{A_i}{A_{j}}$, the following table summarizes the uncertainties involved in the calculation of the damping ratio from a pair of peaks indexed with $(i, j)$. The right-most column is obtained by applying the procedure outlined by \cref{eq:uncertainty}.
 
 \begin{table}[H]
   \begin{center}
@@ -392,14 +400,14 @@ $$\Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x$$Let $i$, $j$ be the indices 
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|c|c|c|}
       \hline
-      \thcolor {Variable}       & \thcolor Calculation                      & \thcolor Absolute Uncertainty                                                                      \\ \hline
-      $m$                       &                                           & $0.01\si{\g}$                                                                                      \\ \hline
-      \chcolor $m^{-1}$         &                                           & $(m)^{-2}\cdot 0.01\si{\per\g}$                                                                    \\ \hline
-      $A_k,\,\forall k$         &                                           & $0.1\si{\cm}$                                                                                      \\ \hline
-      $\gamma_{i,j}$            & $\frac{A_i}{A_{j}}$                       & $\Delta \lambda_{i, j} = \frac{A_i}{A_{j}}(\frac{\Delta A_i}{A_{i}} + \frac{\Delta A_{j}}{A_{j}})$ \\ \hline
-      $\delta_{i,j}$            & $\frac{1}{j - i}\ln{\frac{A_i}{A_{j}}}$   & $\Delta \delta = \frac{\Delta \lambda}{\lambda}$                                                   \\ \hline
-      $\zeta_{i, j}$            & $\frac{\delta}{\sqrt{4\pi^2 + \delta^2}}$ & $\Delta \zeta_{i, j} = \diff{\zeta}{\delta} \cdot \Delta\delta$                                    \\ \hline
-      \chcolor $\zeta_{i, j}^2$ &                                           & $2(\zeta_{i, j})\cdot (\Delta \zeta_{i, j})$                                                       \\ \hline
+      \thcolor {Variable}       & \thcolor Represented Transformation                   & \thcolor Propagated Absolute Uncertainty                                                          \\ \hline
+      $m$                       &                                                       & $0.01\si{\g}$                                                                                     \\ \hline
+      \chcolor $m^{-1}$         & \chcolor                                              & \chcolor $(m)^{-2}\cdot 0.01\si{\per\g}$                                                          \\ \hline
+      $A_k,\,\forall k$         &                                                       & $0.1\si{\cm}$                                                                                     \\ \hline
+      $\gamma_{i,j}$            & $\frac{A_i}{A_{j}}$                                   & $\Delta \gamma_{i, j} = \frac{A_i}{A_{j}}(\frac{\Delta A_i}{A_{i}} + \frac{\Delta A_{j}}{A_{j}})$ \\ \hline
+      $\delta_{i,j}$            & $\frac{1}{j - i}\ln{\gamma_{i,j}}$                    & $\Delta \delta_{i,j} = \frac{1}{j - i}\times \frac{\Delta \gamma_{i,j}}{\gamma_{i,j}}$            \\ \hline
+      $\zeta_{i, j}$            & $\frac{\delta_{i,j}}{\sqrt{4\pi^2 + \delta_{i,j}^2}}$ & $\Delta \zeta_{i, j} = \diff{\zeta}{\delta} \cdot \Delta\delta$                                   \\ \hline
+      \chcolor $\zeta_{i, j}^2$ & \chcolor                                              & \chcolor $2(\zeta_{i, j})\cdot (\Delta \zeta_{i, j})$                                             \\ \hline
     \end{tabular}
     \label{tab:6}
     \captionof{table}{Uncertainty Propagation}

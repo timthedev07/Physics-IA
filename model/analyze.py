@@ -75,7 +75,7 @@ def avgDampingRatio(row: pd.Series, mode: Union["uncertainties", "vals"]):
             )  # Calculate the absolute error of gamma
 
             # Calculate the absolute error of delta
-            errAbsDelta = errAbsGamma / gamma
+            errAbsDelta = (errAbsGamma / gamma) * (1 / (j - i))
 
             zeta = delta / math.sqrt(
                 4 * (math.pi) ** 2 + delta**2
