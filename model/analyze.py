@@ -31,7 +31,10 @@ peakError = 1 / 1000  # in m
 
 # Load the raw data
 def readCSV(fname="data.csv"):
-    data = pd.read_csv(path.join(DATADIR, fname))
+    data = pd.read_csv(
+        path.join(DATADIR, fname),
+        decimal=".",
+    )
     return data
 
 
@@ -109,19 +112,26 @@ def avgDampingRatio(row: pd.Series, mode: Union["uncertainties", "vals"]):
 
 def averageData() -> pd.DataFrame:
     data = (
-        pd.concat([readCSV(f"Trial {i}-表格 1.csv") for i in range(1, TRIAL_NUM + 1)])
+        pd.concat(
+            [
+                readCSV(
+                    f"Trial {i}-表格 1.csv",
+                )
+                for i in range(1, TRIAL_NUM + 1)
+            ]
+        )
         .groupby(["Bob", "Mass"], as_index=False, sort=False)[
             [f"Peak {i - PEAK_IND[0] + 1}" for i in range(PEAK_IND[0], PEAK_IND[1])]
         ]
         .mean()
     )
     # convert from gram to kg
-    data["Mass"] = data["Mass"] / 1000
+    data["Mass"] = data["Mass"].div(1000)
     # unit conversion
     for i in range(PEAK_IND[0], PEAK_IND[1]):
         # convert from cm to m
         data[f"Peak {i - PEAK_IND[0] + 1}"] = data[f"Peak {i - PEAK_IND[0] + 1}"] / 100
-    return data.round(3)
+    return data
 
 
 def processData():
@@ -187,20 +197,20 @@ def theoretical(plt, endpoint):
         "g--",
         label="Stoke's Law Prediction",
     )
-    t = plt.text(16.5, 0.008, f"$y = {fmt(m)}x$", style)
+    t = plt.text(16.5, 0.009, f"$y = {fmt(m)}x$", style)
     t.set_bbox(dict(facecolor="palegreen", alpha=1, edgecolor="limegreen"))
     return th
 
 
 def drawMaxMin(plt, x, y, errY):
     n = len(x)
-    maxM = (y[n - 1] + errY[n - 1] - (y[0] - errY[0])) / (x[n - 1] - x[0])
-    minM = (y[n - 1] - errY[n - 1] - (y[0] + errY[0])) / (x[n - 1] - x[0])
+    maxM = (y[n - 2] + errY[n - 2] - (y[0] - errY[0])) / (x[n - 2] - x[0])
+    minM = (y[n - 1] - errY[n - 1] - (y[1] + errY[1])) / (x[n - 1] - x[1])
     pA_1 = (x[0], y[0] - errY[0])
     pB_1 = (x[0], y[0] + errY[0])
 
     maxB = pA_1[1] - maxM * pA_1[0]
-    minB = pB_1[1] - minM * pB_1[0]
+    minB = pB_1[1] - minM * pB_1[0] - 0.001
 
     xWithZero = np.insert(x, 0, GRAPH_START)
 

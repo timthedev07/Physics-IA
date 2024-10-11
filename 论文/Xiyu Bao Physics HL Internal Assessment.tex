@@ -30,6 +30,7 @@
 \newtheorem{assumption}{Assumption}
 \newtheorem{definition}{Definition}
 \doublespacing
+\parindent=0pt
 \newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 \let\oldsi\si
 \renewcommand{\si}[1]{\oldsi[per-mode=reciprocal-positive-first]{#1}}
@@ -50,7 +51,7 @@
   linkcolor=blue,
   urlcolor=blue
 }
-\newcommand{\lb}{\\[8pt]}
+\newcommand{\lb}{\\[12pt]}
 \newenvironment*{cell}[1][]{\begin{tabular}[c]{@{}c@{}}}{\end{tabular}}
 \newcommand{\img}[4]{\begin{center}
   \begin{figure}[H]
@@ -58,23 +59,6 @@
     \includegraphics[width=#2\textwidth]{#1}
     \caption{#3}
     \label{fig:#4}
-  \end{figure}
-\end{center}}
-\newcommand{\doubleimg}[4]{\begin{center}
-  \begin{figure}[H]
-    \centering
-    \begin{subfigure}{.45\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{#1}
-      \caption{#2}
-      \label{fig:sub1}
-    \end{subfigure}
-    \begin{subfigure}{.45\textwidth}
-      \centering
-      \includegraphics[width=1\linewidth]{#3}
-      \caption{#4}
-      \label{fig:sub2}
-    \end{subfigure}
   \end{figure}
 \end{center}}
 \usepackage{fancyhdr}
@@ -121,7 +105,7 @@
 
     \vspace{4cm}
 
-    Word count: 2226
+    Word count: TBC
 
   \end{center}
 \end{titlepage}
@@ -141,41 +125,52 @@ This essay extends the investigation of simple harmonic motion by studying the d
 What is the relationship between the mass of a damped spring-block oscillator \{52.48g, 60.94g, 69.72g, 86.51g, 93.47g, 113.27g\} and the damping ratio?
 
 \subsection{Background Information}
-An ideal and rather theoretical spring-mass system oscillates indefinitely, producing an ongoing sine or cosine curve. In reality, there will be a damping force that can be as minimally consequential as air resistance or as observable as viscous drag in a liquid. Anyway, energy is dissipated to the surroundings and hence the amplitude will gradually decrease until the oscillation stops. The extent to which the viscous drag force, modeled by Stoke's law, diminishes the oscillatory motion submerged in water depends on the mass, radius, and velocity of the oscillator, and the viscosity of the liquid at a given temperature. This investigation delves into the relationship between the independent variable of mass $m$, and the dependent variable of the damping ratio $\zeta$. The mass set used in the system consists of spheres of equal radii but different densities.
+An ideal and rather theoretical spring-mass system oscillates indefinitely, producing an ongoing sine or cosine curve. In reality, there will be a damping force that can be as minimally consequential as air resistance or as observable as viscous drag in a liquid. Anyway, energy is dissipated to the surroundings and hence the amplitude will gradually decrease until the oscillation stops. This investigation delves into the relationship between the mass $m$ of an oscillator and the damping ratio $\zeta$ for each oscillator, which is a measure of how rapid the amplitude of oscillation drops.
 
-Stoke's Law determines the drag force acting upon an object traveling through a fluid -- proportional to the object's velocity and is the following per the Data Booklet, in Newtons
+\pagebreak
+
+Let us now study the foundational model used in this investigation. The motion of the oscillator is modeled by the following differential equation \parencite{miller_2004_13}:
+\begin{equation}
+  \label{eq:1}
+  m\ddot{x}(t) + b\dot{x}(t) + kx(t) = 0
+\end{equation}
+where
+\begin{itemize}
+  \item $m$ denotes the mass of the oscillator
+  \item $b$ denotes the damping coefficient that is constant in a system of constant fluid viscosity
+  \item $k$ represents the spring constant
+  \item $x(t)$, $\dot{x}(t)$, and $\ddot{x}(t)$ denote the displacement, velocity, and acceleration of the oscillator respectively, at any time $t$.
+\end{itemize}
+It must be noted that, in the above differential equation, the \textbf{damping force}, which will tell us about the damping ratio $\zeta$, is represented by $b\dot{x}(t)$, which is proportional to the speed of the oscillator.\lb
+Now, let us quantify the variable $\zeta$, the damping ratio, which is defined as the ratio of the damping coefficient to the critical damping coefficient --- the damping coefficient when the system returns to equilibrium in the shortest time possible without completing an oscillation. That is $$\zeta = \frac{b}{c_c} = \frac{b}{2mw_0}$$
+where $w_0$ is the natural frequency of the system
+\begin{equation}\label{eq:dr}
+  w_0            = \sqrt{\frac{k}{m}}\implies \zeta = \frac{b}{2\sqrt{mk}}
+\end{equation}
+This gives us some knowledge about our dependent variable $\zeta$, but we need further information about $b$ to make more meaningful deductions. This is where Stoke's Law comes in.\lb
+As previously mentioned, the damping force is proportional to the velocity of the oscillator --- this is a desirable property that allows us to estimate this damping force using Stoke's Law, which also uses the fact that force is proportional to the object's velocity. By doing so, we proceed with the assumption that the damping force is just the viscous drag force.\lb
+As per the Data Booklet, Stoke's Law determines the drag force acting upon an object traveling through a fluid -- proportional to the object's velocity and is the following per the Data Booklet, in newtons
 $$F_d = 6\pi r \eta v $$ where
 \begin{itemize}
   \item $r$ (m) is the radius of the sphere
   \item $\eta$ $(\si{\N\s\per\m\squared})$ is the viscosity of the fluid at some temperature
   \item $v$ $(\si{\m\per\s})$ is the velocity of the object in the fluid
 \end{itemize}
-This holds if and only if the object's speed is low such that the flow is \textit{laminar}, and the object is \textit{spherical}.
 
-\begin{assumption}
-  \label{as:1}
-  The damping force is the viscous drag force.
-\end{assumption}
+In the upcoming hypothesis, we work under the reasonable assumption that the damping force is the drag force, which allows us to express $b$ using more meaningful quantities.
 
-Moreover, the motion of the oscillator is modeled by the following differential equation, with the damping force proportional to velocity \parencite{miller_2004_13}:
-\begin{equation}
-  \label{eq:1}
-  m\ddot{x}(t) + b\dot{x}(t) + kx(t) = 0
-\end{equation}
-$m$ denotes the mass of the oscillator, $b$ denotes the damping coefficient that is constant in a system of constant fluid viscosity, and $k$ represents the spring constant. The damping ratio $\zeta$ is defined as the ratio of the damping coefficient to the critical damping coefficient --- the damping coefficient when the system returns to equilibrium without completing an oscillation. That is $$\zeta = \frac{b}{c_c} = \frac{b}{2mw_0}$$
-where $w_0$ is the natural frequency of the system
-\begin{align*}
-  w_0            = \sqrt{\frac{k}{m}}\implies \zeta & = \frac{b}{2\sqrt{mk}}
-\end{align*}
+\pagebreak
 
 \subsection{Hypothesis}
 
-Suppose that the constant of proportionality of the damping force with speed is given by $b = 6\pi r \eta$, per Stoke's law. Then
+By previous argument, the constant of proportionality of the damping force with speed is given by $b = 6\pi r \eta$, per Stoke's law. We now use \cref{eq:dr} to obtain the following
 \begin{align*}
-  6\pi r \eta            & = 2\zeta \sqrt{mk}            \\
-  9\pi^2 r^2 \eta^2      & = \zeta^2mk                   \\
-  \frac{\zeta^2}{m^{-1}} & = \frac{9\pi^2 r^2 \eta^2}{k}
+  6\pi r \eta       & = 2\zeta \sqrt{mk} \\
+  9\pi^2 r^2 \eta^2 & = \zeta^2mk
 \end{align*}
+\begin{equation}\label{eq:gradient}
+  \frac{\zeta^2}{m^{-1}} = \frac{9\pi^2 r^2 \eta^2}{k}
+\end{equation}
 \begin{proposition}
   For a fixed sphere radius $r$ and viscosity $\eta$, \begin{equation}
     \zeta^2 \propto m^{-1}
@@ -184,15 +179,17 @@ Suppose that the constant of proportionality of the damping force with speed is 
   \label{prop:1}
 \end{proposition}
 
-\cref{prop:1} has a few dependencies that may affect its accuracy. It relies on \cref{as:1}, which, in turn, requires that the flow is laminar. This is a reasonable assumption given that the spheres are relatively small, and the speed is low; the potential for turbulence is insignificant and even if present, the impact is minimal. Furthermore, the buoyancy force on the object
-$$F_b = \rho g V$$ where
+There exist other physics conditions that we must examine to determine the sensibility of estimating the damping force as the viscous drag of the liquid.\lb
+Firstly, one must recognize that Stoke's Law requires that the flow is laminar. This is a reasonable assumption to make given that the spheres are relatively small, and the speed is low; the potential for turbulence is negligible, and even if it is present, the impact would be minimal. Furthermore, the buoyancy force on the object
+$$F_b = \rho g V$$ given in newtons, where
 \begin{itemize}
-  \item $\rho$ is the density of the fluid
-  \item $V$ is the volume of the object
-  \item $g$ is the gravitational field strength
+  \item $\rho$ is the density of the fluid, in $\si{\kg\per\m\cubed}$
+  \item $V$ is the volume of the object, in $\si{\m\cubed}$
+  \item $g$ is the gravitational field strength, in $\si{\m\per\s\squared}$
 \end{itemize}
-is always present but is not modeled in the differential equation at \cref{eq:1}. Notwithstanding, the absence of considerations of buoyancy has negligible impact on precision. The setup involves spheres of radius $2.5\si{\cm}$ and water of density $997\si{\kg\per\m\cubed}$, then
+is always present but is not modeled in the differential equation at \cref{eq:1}. Notwithstanding, the absence of considerations of buoyancy has negligible impact on the results. The setup involves spheres of radius $2.5\si{\cm}$ and water of density $997\si{\kg\per\m\cubed}$, then
 $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{\N}$$
+which confirms that the buoyancy force is sufficiently infinitesimal to be neglected in the model.\lb
 \underline{Null hypothesis ($H_0$)}: There is no relationship between the mass and the damping ratio.
 \underline{Alternative hypothesis ($H_1$)}: There is a relationship between the mass and the damping ratio.
 \pagebreak
@@ -253,21 +250,22 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
 \subsection{Methodology}
 
 \begin{outline}[enumerate]
-  \1 Take a scrotch tape, and cut into segments of $8$ $\si{\cm}$ in length.
-  \1 Arrange the masses in increasing order, i.e. $m_1 < m_2 < ... < m_n$, where $n$ is the number of masses in the mass set.
+  \1 Take a scotch tape, and cut into segments of $8$ $\si{\cm}$ in length.
+  \1 Arrange the six masses in increasing order, i.e. $m_1 < m_2 < ... < m_6$
   \1 Fill in the beaker with $A$ $\si{\mL}$ of tap water
   \1 Measure the temperature of the water, and record as $T_0$
   \1 Attach the clamp to the retort stand.
-  \1 Lean the ruler vertically against the retort stand.
+  \1 Fix the ruler vertically against the retort stand.
   \1 Place the beaker directly under the clamp such that the clamp lies at the center of the beaker in bird's eye view.
-  \1 For $i$ from 1 to $n$ inclusive, repeat the following
+  \1 For $i$ from 1 to 6 inclusive, repeat the following
+  \2 Measure the water temperature and wait until it stays constant at $27\degsym \text{C}$.
   \2 Take the $i$th mass, $m_i$, and attach its hook to the spring.
   \2 Take a piece of tape, wrap it as many times as possible across the point of connection.
   \2 Attach the spring-mass pair to the clamp and let the mass hang freely.
   \2 Adjust the height of the clamp so that the mass is submerged in the water.
   \2 Measure the height of the mass from the surface of the desk, and record as $h_0$
   \2 Adjust the vertical camera position such that it levels with the reading $(h_0 - \dfrac{A_0}{2}) \si{\cm}$ to minimize parallax error of the camera.
-  \2 For $j$ from 1 to 5 inclusive, repeat the following
+  \2 For $j$ from 1 to 5 inclusive, repeat the following (this represents the 5 repeats)
   \3 Pull the mass down by $A_0\,\si{\cm}$ by reading $h_0 - A_0$ from the ruler at eye level. The center of the mass should be the height a which readings are taken.
   \3 Start the camera recording.
   \3 Release the mass.
@@ -278,7 +276,6 @@ $$F_b \approx 10 \times 1000 \times \frac{4}{3}\pi (2.5\times 10^{-2})^3 < 1\si{
   \3 Record the respective heights above the desk as $\{h_k\}^{5}_{k=1}$.
   \3 Then the corresponding peak amplitudes are $A_k = h_0 - h_{k}$
   \2 Take the average values across the three trials for each peak amplitude.
-  \2 Measure the water temperature and wait until it stays constant at $27\degsym \text{C}$.
 \end{outline}
 
 \subsection{Preliminary Trials}
@@ -290,10 +287,10 @@ Preliminary trials were conducted to identify and resolve potential challenges, 
 \begin{center}
   \begin{tabular}{|P{0.19\textwidth}|p{0.71\textwidth}|}
     \hline
-    \thcolor Consideration & \multicolumn{1}{c|}{\thcolor {Relevance and Mitigation}         }                                                                                                                                                                                                                                   \\ \hline
-    Safety                 & All valuable assets are kept away from the experimental setup to prevent accidental detachments of the spring-mass system leading to the mass being thrown out and causing damage. Moreover, the amplitude was kept low to prevent fierce movements that could break the beaker or computer camera. \\ \hline
-    Ethical                & No use of animals or human bodies involved. However, the recording selects the location and angle that avoids the storage and exposure of any personal information or objects of the lab owner, ensuring maximum privacy protection.                                                                \\ \hline
-    Environmental          & The entire experiment aims to reuse the same water throughout to minimize water wastage.    Furthermore, the spring was carefully pulled to prevent it from passing its elastic limit and becoming unusable for future experiments.                                                                 \\ \hline
+    \thcolor Consideration & \multicolumn{1}{c|}{\thcolor {Relevance and Mitigation}         }                                                                                                                                                                                                                                                                                                                     \\ \hline
+    Safety                 & All valuable assets are kept away from the experimental setup to prevent accidental detachments of the spring-mass system leading to the mass being thrown out and causing damage. Moreover, the amplitude was kept low to prevent fierce movements of the spheres that could break the beaker or computer camera. Also, water spillage is minimized to keep electrical devices safe. \\ \hline
+    Ethical                & No use of animals or human bodies involved. However, the recording selects the location and angle that avoids the storage and exposure of any personal information or objects of the lab owner, ensuring maximum privacy protection.                                                                                                                                                  \\ \hline
+    Environmental          & The entire experiment aims to reuse the same water throughout to minimize water wastage.    Furthermore, the spring was carefully pulled to prevent it from passing its elastic limit and becoming unusable for future experiments.                                                                                                                                                   \\ \hline
   \end{tabular}
   \label{tab:3}
   \captionof{table}{Risk Assessment}
@@ -386,7 +383,7 @@ In this section, one will learn about how uncertainties propagate through the ca
 We will adopt the following method for the computation of uncertainties: Let $\Delta x$ denote the absolute uncertainty of $x$. For $\Delta x \ll x$, the uncertainty of $f(x)$ is given by the following \parencite{vacher_2001_the}
 
 \begin{equation}\label{eq:uncertainty}
-  \Delta f(x) \approx \diff{f(x)}{x}\cdot \Delta x
+  \Delta f(x) \approx \diff{f(x)}{x}\times \Delta x
 \end{equation}
 
 From the raw data of the peak heights to $\zeta$, as seen in the data transformation section at \cref{subsubsec:transformation}, the initial measurements have gone through a series of functions to finally arrive at a value for $\zeta$. Thus, to visualize the propagation of uncertainty, we will consider how the uncertainty is propagated in each individual step of the transformation linearly. The highlighted rows represent the final stages of the uncertainty propagation for the independent and dependent variables respectively.
@@ -401,13 +398,13 @@ Let $i$, $j$ be the indices of any pair of peaks such that $i < j$, and also let
     \begin{tabular}{|c|c|c|}
       \hline
       \thcolor {Variable}       & \thcolor Represented Transformation                   & \thcolor Propagated Absolute Uncertainty                                                          \\ \hline
-      $m$                       &                                                       & $0.01\si{\g}$                                                                                     \\ \hline
-      \chcolor $m^{-1}$         & \chcolor                                              & \chcolor $(m)^{-2}\cdot 0.01\si{\per\g}$                                                          \\ \hline
+      $m$                       &                                                       & $\SI{0.01}{\g} \equiv \SI{e-5}{\kg}$                                                              \\ \hline
+      \chcolor $m^{-1}$         & \chcolor                                              & \chcolor $\left(m^{-2}\times\num{e-5}\right)$                                  $\si{\per\kg}$     \\ \hline
       $A_k,\,\forall k$         &                                                       & $0.1\si{\cm}$                                                                                     \\ \hline
       $\gamma_{i,j}$            & $\frac{A_i}{A_{j}}$                                   & $\Delta \gamma_{i, j} = \frac{A_i}{A_{j}}(\frac{\Delta A_i}{A_{i}} + \frac{\Delta A_{j}}{A_{j}})$ \\ \hline
       $\delta_{i,j}$            & $\frac{1}{j - i}\ln{\gamma_{i,j}}$                    & $\Delta \delta_{i,j} = \frac{1}{j - i}\times \frac{\Delta \gamma_{i,j}}{\gamma_{i,j}}$            \\ \hline
-      $\zeta_{i, j}$            & $\frac{\delta_{i,j}}{\sqrt{4\pi^2 + \delta_{i,j}^2}}$ & $\Delta \zeta_{i, j} = \diff{\zeta}{\delta} \cdot \Delta\delta$                                   \\ \hline
-      \chcolor $\zeta_{i, j}^2$ & \chcolor                                              & \chcolor $2(\zeta_{i, j})\cdot (\Delta \zeta_{i, j})$                                             \\ \hline
+      $\zeta_{i, j}$            & $\frac{\delta_{i,j}}{\sqrt{4\pi^2 + \delta_{i,j}^2}}$ & $\Delta \zeta_{i, j} = \diff{\zeta}{\delta} \times \Delta\delta$                                  \\ \hline
+      \chcolor $\zeta_{i, j}^2$ & \chcolor                                              & \chcolor $2(\zeta_{i, j})\times (\Delta \zeta_{i, j})$                                            \\ \hline
     \end{tabular}
     \label{tab:6}
     \captionof{table}{Uncertainty Propagation}
@@ -416,9 +413,26 @@ Let $i$, $j$ be the indices of any pair of peaks such that $i < j$, and also let
 \end{table}
 
 \vspace{\baselineskip}
+
+Let us manually carry out this procedural analysis for one of the data points in \cref{tab:5} to visualize the propagation of uncertainty:
+\begin{enumerate}
+  \item Consider the first row, with $m = \SI{52.48e-3}{\kilo\g}$
+  \item We start by calculating the $x$-axis uncertainty
+        \begin{enumerate}
+          \item The uncertainty of the mass reciprocal is calculated as $$(\num{52.48e-3})^{-2}\times 10^{-5} \approx 0.003631$$
+        \end{enumerate}
+  \item We now calculate the uncertainty along the $y$-axis
+        \begin{enumerate}
+          \item Take a pair of peaks' average heights, say $(\overline{A_1}, \overline{A_2}) = (2.9, 1.7)$
+          \item We compute $\gamma_{1, 2} = \frac{2.9}{1.7} \approx 1.706$ and $\Delta \gamma_{1, 2}$
+          \item We move along the uncertainty formulae table in \cref{tab:6} to calculate the $\zeta_{1, 2}^2$ and its uncertainty.
+          \item We repeat a similar procedure to arrive at a value of $2.71 \times 10^{-3}$ for $\Delta (\zeta_{1, 2}^2)$.
+          \item The process is repetitive by nature, for the sake of clarity, the numeric working is omitted.
+          \item We iterate over previous steps to compute $\Delta (\zeta_{1, 2}^2)$, $\Delta (\zeta_{2, 3}^2)$, $\Delta (\zeta_{3, 1}^2)$, among which we will take the average as the final $y$-axis uncertainty for the sake of reliability.
+        \end{enumerate}
+\end{enumerate}
+
 To implement the above logic in Python, the previous code snippet in \cref{fig:damping_code} under \cref{app:1} is extended to include the uncertainty calculations. See \cref{app:2} for the full code snippet.
-
-
 
 Running the script again yields the following table of uncertainties:
 \begin{table}[htbp]
@@ -427,13 +441,13 @@ Running the script again yields the following table of uncertainties:
     \renewcommand{\arraystretch}{1.5}
     \begin{tabular}{|P{0.16\textwidth}|P{0.25\textwidth}|P{0.25\textwidth}|P{0.145\textwidth}|}
       \hline
-      \thcolor {$\Delta m/10^{3}$ ($\si{\kg}$)} & \thcolor $m^{-1} (\si{\per\kg})$ & \thcolor $\Delta m^{-1} (\si{\per\kg})$ & \thcolor $\Delta \zeta^2/10^{-3}$ (unitless) \\ \hline
-      52.48                                     & 19.23                            & 0.003698 $\approx$ 0.00                 & 3.35                                         \\ \hline
-      60.94                                     & 16.39                            & 0.002687 $\approx$ 0.00                 & 2.53                                         \\ \hline
-      69.72                                     & 14.29                            & 0.002041 $\approx$ 0.00                 & 2.71                                         \\ \hline
-      86.51                                     & 11.49                            & 0.001321 $\approx$ 0.00                 & 2.42                                         \\ \hline
-      93.47                                     & 10.75                            & 0.001156 $\approx$ 0.00                 & 1.92                                         \\ \hline
-      113.27                                    & 8.850                            & 0.000783 $\approx$ 0.00                 & 2.01                                         \\ \hline
+      \thcolor {$\Delta m/10^{-3}$ ($\si{\kg}$)} & \thcolor $m^{-1} (\si{\per\kg})$ & \thcolor $\Delta m^{-1} (\si{\per\kg})$ & \thcolor $\Delta \zeta^2/10^{-3}$ (unitless) \\ \hline
+      52.48                                      & 19.23                            & 0.003631 $\approx$ 0.00                 & 2.71                                         \\ \hline
+      60.94                                      & 16.39                            & 0.002693 $\approx$ 0.00                 & 2.24                                         \\ \hline
+      69.72                                      & 14.29                            & 0.002057 $\approx$ 0.00                 & 2.17                                         \\ \hline
+      86.51                                      & 11.49                            & 0.001336 $\approx$ 0.00                 & 1.91                                         \\ \hline
+      93.47                                      & 10.75                            & 0.001145 $\approx$ 0.00                 & 1.63                                         \\ \hline
+      113.27                                     & 8.850                            & 0.000779 $\approx$ 0.00                 & 1.62                                         \\ \hline
     \end{tabular}
     \label{tab:7}
     \captionof{table}{Absolute uncertainties}
@@ -450,17 +464,14 @@ The two graphs above show the relationship between the damping ratio squared and
 
 \section{Conclusion}
 
-This essay delved into the effect of mass $m$ on the damping ratio $\zeta$ of a damped spring-block oscillator submerged in water, with the hypothesis that $$\zeta^2 \propto m^{-1}$$ The results from the experiment suggest a linear relationship between the damping ratio squared and the inverse of the mass, with a Pearson correlation coefficient of 0.700, indicating a relatively strong linear trend. The theoretical prediction line falls within the interval of the maximum and minimum slopes due to the uncertainties in measurements, supporting the hypothesis that the damping ratio squared is inversely proportional to the mass, within the experimented range of 52.48 to 113.27 grams.
-
-%wc: 1848%
-
-The observation that the relationship is not perfectly linear is a consequence of the uncertainties that arise from the limitations of measuring devices and human errors. One primary source of random error is the unintentional but inevitable extra force applied when releasing the spring in the liquid. Nonetheless, the mass set did not produce anomalies and massive systematic errors, suggesting that the environment and the experimental setup were controlled effectively. \cref{prop:1} suggested that the expected gradient, $m_0$ would be \begin{align*}
-  m_0 & =    \frac{9\pi^2r^2\eta^2}{k}               \\
-      & =        \frac{9\pi^2(0.025)^2(0.85)^2}{100} \\
-      & \approx  4.011 \times 10^{-4}
+This essay delved into the effect of mass $m$ on the damping ratio $\zeta$ of a damped spring-block oscillator submerged in water, with the hypothesis that $$\zeta^2 \propto m^{-1}$$ The results from the experiment suggest a linear relationship between the damping ratio squared and the inverse of the mass, with a Pearson correlation coefficient of $0.684 \approx 0.7$, indicating a relatively strong linear trend. This evident linearity confirms our implied conjecture that the damping force can be estimated using the viscous drag force per Stoke's Law.\lb
+Let us now evaluate our result against the expected gradient $K$ predicted by \cref{eq:gradient}. By substituting the control variables, we obtain
+\begin{align*}
+  K = \frac{9\pi^2(0.025)^2(0.85)^2}{100} \approx 4.011\times 10^{-4}
 \end{align*}
-
-The minimum and maximum slopes are $-3.339\times 10^{-4}$ and $9.109\times 10^{-4}$ respectively, with the experimental gradient in between. This shows that the drag force on the oscillator in water can be estimated using Stoke's Law. The error propagation does create rather significant error bars due to the already small values of $\zeta^2$, particularly for smaller masses. However, this does accept the theoretical value and is expected since $\zeta^2$ is very sensitive to a change in mass.
+This theoretically predicted gradient falls within the interval of the maximum- and minimum-slope lines, namely the range $\left[-2.264\times 10^{-4},\, 5.086\times 10^{-4}\right]$, validating the hypothesis that the damping ratio squared is inversely proportional to the mass and that the constant of proportionality is correctly estimated by our hypothesis, within the experimented range of 52.48 to 113.27 grams.\lb
+The observation that the data points are not perfectly collinear is a consequence of the uncertainties that arise from the limitations of measuring devices and human errors. One primary source of random error is the unintentional but inevitable extra force applied when releasing the spring in the liquid. Nonetheless, the mass set did not produce anomalies and massive systematic errors, suggesting that the environment and the experimental setup were controlled effectively. \lb
+Finally, it should be noted that the error propagation procedure does create rather significant error bars due to the already small values of $\zeta^2$, particularly for smaller masses. However, this should be expected since $\zeta^2$ is very sensitive to a change in mass, and this high sensitivity would naturally lead to larger ranges of uncertainty.
 
 \subsection{Evaluation}
 
@@ -469,11 +480,11 @@ The minimum and maximum slopes are $-3.339\times 10^{-4}$ and $9.109\times 10^{-
 \begin{center}
   \begin{tabular}{|p{0.3\textwidth}|p{0.6\textwidth}|}
     \hline
-    \thcolor Strength                                   & \thcolor Observations                                                                                                                                                                                                                                                                                          \\ \hline
-    Attempt to minimize random error in peak amplitudes & Across the three peaks, all possible pairs were used to calculate a value of $\zeta$, across all of them an average is taken. This produces the $\overline{\zeta}$ that is closer to the true value for each possible oscillation, as the average measurement is less susceptible to random forces introduced. \\ \hline
-    Error minimization procedures                       & The experiment was designed to minimize random and systematic errors. Taking fix trials and computing the average builds upon the attempt to minimize error by averaging pairs across three peaks, further diminishing the impact of potential anomalies and outliers in the dataset.                          \\ \hline
-    Consistency                                         & The entire experiment followed a sequence of algorithmic and rigid instructions to ensure that each trial was conducted in the same conditions.                                                                                                                                                                \\ \hline
-    Preliminary tests                                   & Preliminary tests were conducted to identify potential challenges and refine the experimental conditions, ensuring that the final experiment was conducted under optimal conditions.                                                                                                                           \\ \hline
+    \thcolor Strength                                   & \thcolor Observations                                                                                                                                                                                                                                                                                                 \\ \hline
+    Attempt to minimize random error in peak amplitudes & Across the three peaks, all possible pairs were used to calculate a value of $\zeta$, across all of them an average is taken. This produces the $\overline{\zeta}$ that is closer to the true value for each possible oscillation, as the average measurement is less susceptible to arbitrary changes in the system. \\ \hline
+    Error minimization procedures                       & The experiment was designed to minimize random and systematic errors. Taking fix trials and computing the average builds upon the attempt to minimize error by averaging pairs across three peaks, further diminishing the impact of potential anomalies and outliers in the dataset.                                 \\ \hline
+    Consistency                                         & The entire experiment followed a sequence of algorithmic and rigid instructions to ensure that each trial was conducted in the same conditions.                                                                                                                                                                       \\ \hline
+    Preliminary tests                                   & Preliminary tests were conducted to identify potential challenges and refine the experimental conditions, ensuring that the final experiment was conducted under optimal conditions.                                                                                                                                  \\ \hline
   \end{tabular}
 \end{center}
 
@@ -484,8 +495,8 @@ The minimum and maximum slopes are $-3.339\times 10^{-4}$ and $9.109\times 10^{-
     \hline
     \thcolor Weakness                                   & \thcolor Observations                                                                                                                                                                                                                & \thcolor Improvements                                                                                                                   \\ \hline
     Inaccuracy of manual identification from video clip & The manual identification of the peaks from the video clip may have introduced human error, leading to further inaccuracies in the peak amplitude measurements. These uncertainties may not have been captured by the data analysis. & Integrating computer vision can automatically identify the peaks would reduce human error and improve the accuracy of the measurements. \\ \hline
-    Release of the oscillator                           & The release of the oscillator may have introduced an additional force, leading to inconsistencies in the peak amplitude measurements.                                                                                                & Using a tong, for instance, would ensure a consistent force and minimize the introduction of additional forces.                         \\ \hline
-    Scrotch tape attachment                             & At times the attachment demonstrated signs of slipping or looseness, which may have affected the oscillation and effect of damping.                                                                                                  & Using a more secure attachment method, such swivel connectors, would ensure the mass' hook is firmly attached to the spring.            \\ \hline
+    Release of the oscillator                           & The release of the oscillator may have introduced an additional force, leading to inconsistencies in the peak amplitude measurements.                                                                                                & Using tongs, for instance, would ensure a consistent force and minimize the introduction of additional forces.                          \\ \hline
+    Scotch tape attachment                              & At times the attachment demonstrated signs of slipping or looseness, which may have affected the oscillation and effect of damping.                                                                                                  & Using a more secure attachment method, such swivel connectors, would ensure the mass' hook is firmly attached to the spring.            \\ \hline
   \end{tabular}
 \end{center}
 
@@ -495,11 +506,11 @@ The minimum and maximum slopes are $-3.339\times 10^{-4}$ and $9.109\times 10^{-
 \begin{center}
   \begin{longtable}{|p{0.15\textwidth}|p{0.35\textwidth}|p{0.35\textwidth}|}
     \hline
-    \thcolor Weakness                     & \thcolor Observations                                                                                                                                                                                                                                                                                                                                        & \thcolor Improvements                                                                                                         \\ \hline
-    Limited sample strength.              & The experiment only used five masses, which may not be sufficient to draw definitive conclusions. This was due to limited equipment provided by the laboratory. Moreover, it does not cover a great range of masses either, hence the model failed to inspect the behavior of the oscillatory motion for larger masses and validate the hypothesis for them. & Increasing the number of masses tested would provide a more comprehensive dataset and enhance the reliability of the results. \\ \hline
-    Varying spring constant               & The spring constant was assumed to be constant, but in reality, it may have varied slightly with use, leading to inaccuracies in theoretical prediction of the gradient.                                                                                                                                                                                     & Preparing a set of identical springs and consistently switching between them would minimize fatigue.                          \\ \hline
-    Camera positioning                    & The camera positioning may have introduced parallax errors, leading to systematic errors in all of the peak amplitude measurements.                                                                                                                                                                                                                          & Through calculations, find the optimal position to minimize the average uncertainty across the peak measurements.             \\ \hline
-    Large uncertainty ranges in $\zeta^2$ & The error spans in $\zeta^2$ were large, particularly for smaller masses.                                                                                                                                                                                                                                                                                    & Using more accurate measuring devices, such as even more accurate rulers and electric balances.                               \\ \hline
+    \thcolor Weakness                     & \thcolor Observations                                                                                                                                                                                                                                                                                                                                        & \thcolor Improvements                                                                                                        \\ \hline
+    Limited sample strength.              & The experiment only used six masses, which may not be sufficient to draw generalized conclusions. This was due to limited equipment provided by the laboratory. Moreover, it does not cover a great range of masses either, hence the model failed to inspect the behavior of the oscillatory motion for larger masses and validate the hypothesis for them. & Increasing the range of masses tested would provide a more comprehensive dataset and enhance the reliability of the results. \\ \hline
+    Varying spring constant               & The spring constant was assumed to be constant, but in reality, it may have varied slightly with use, leading to inaccuracies in theoretical prediction of the gradient.                                                                                                                                                                                     & Preparing a set of identical springs and consistently switching between them would minimize fatigue.                         \\ \hline
+    Camera positioning                    & The camera positioning may have introduced parallax errors, leading to systematic errors in all of the peak amplitude measurements.                                                                                                                                                                                                                          & Through calculations, find the optimal position to minimize the average uncertainty across the peak measurements.            \\ \hline
+    Large uncertainty ranges in $\zeta^2$ & The error spans in $\zeta^2$ were large, particularly for smaller masses.                                                                                                                                                                                                                                                                                    & Using more accurate measuring devices, such rulers and electric balances with even finer resolutions.                        \\ \hline
   \end{longtable}
 \end{center}
 

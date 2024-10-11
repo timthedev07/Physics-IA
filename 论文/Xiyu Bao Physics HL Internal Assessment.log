@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  25 SEP 2024 10:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.26)  11 OCT 2024 21:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -699,7 +699,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count452
 \enitdp@description=\count453
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 52.
+Package hyperref Info: Option `colorlinks' set `true' on input line 53.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip101
@@ -714,28 +714,28 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 )
 \@quotelevel=\count454
 \@quotereset=\count455
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 107.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 91.
  (./Xiyu Bao Physics HL Internal Assessment.aux)
 \openout1 = `"Xiyu Bao Physics HL Internal Assessment.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -801,12 +801,12 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"Xiyu Bao Physics HL Internal Assessment".bbl' found.
  (./Xiyu Bao Physics HL Internal Assessment.bbl)
-Package biblatex Info: Reference section=0 on input line 107.
-Package biblatex Info: Reference segment=0 on input line 107.
+Package biblatex Info: Reference section=0 on input line 91.
+Package biblatex Info: Reference segment=0 on input line 91.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 107.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 91.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count456
@@ -826,19 +826,19 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 107.
+Package hyperref Info: Link coloring ON on input line 91.
  (./Xiyu Bao Physics HL Internal Assessment.out) (./Xiyu Bao Physics HL Internal Assessment.out)
 \@outlinefile=\write4
 \openout4 = `"Xiyu Bao Physics HL Internal Assessment.out"'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 118.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 102.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <17.28> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 118.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 102.
  [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Xiyu Bao Physics HL Internal Assessment.toc
@@ -857,86 +857,86 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 ...t for Data Processing}{23}{subsection.5.1}
+l.28 ...t for Data Processing}{25}{subsection.5.1}
                                                   % [1])
 \tf@toc=\write5
 \openout5 = `"Xiyu Bao Physics HL Internal Assessment.toc"'.
 
  [2]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 141.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149   \item $
-               r$ (m) is the radius of the sphere [1
+l.131 
+       [1
 
 ]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.153 $$
+        F_d = 6\pi r \eta v $$ where [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package siunitx Info: Option "per-mode = reciprocal-positive-first" has been
 (siunitx)             deprecated in this release.
 (siunitx)             
 (siunitx)             Use "per-mode = power-positive-first" as a replacement.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.178 \end{align*}
-                   [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [3] [4]
+ [3] [4] [5]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 214.
+(caption)                particular \caption on input line 211.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 232.
+(caption)                particular \caption on input line 229.
 See the caption package documentation for explanation.
 
-[5] [6]
-<figs/setup.png, id=204, 1000.73875pt x 607.26875pt>
+[6] [7]
+<figs/setup.png, id=208, 1031.855pt x 482.80376pt>
 File: figs/setup.png Graphic file (type png)
 <use figs/setup.png>
-Package pdftex.def Info: figs/setup.png  used on input line 239.
-(pdftex.def)             Requested size: 386.95894pt x 234.81383pt.
- [7 <./figs/setup.png>] [8]
+Package pdftex.def Info: figs/setup.png  used on input line 236.
+(pdftex.def)             Requested size: 386.95894pt x 181.05833pt.
+ [8 <./figs/setup.png>] [9]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 299.
+(caption)                particular \caption on input line 296.
 See the caption package documentation for explanation.
 
-[9] [10] [11] [12] [13]
-<../model/figures/graph.png, id=291, 462.528pt x 346.896pt>
+[10] [11] [12] [13] [14] [15]
+<../model/figures/graph.png, id=310, 462.528pt x 346.896pt>
 File: ../model/figures/graph.png Graphic file (type png)
 <use ../model/figures/graph.png>
-Package pdftex.def Info: ../model/figures/graph.png  used on input line 446.
+Package pdftex.def Info: ../model/figures/graph.png  used on input line 460.
 (pdftex.def)             Requested size: 483.69684pt x 362.79062pt.
- [14]
-<../model/figures/graph_max_min.png, id=301, 462.528pt x 346.896pt>
+ [16]
+<../model/figures/graph_max_min.png, id=322, 462.528pt x 346.896pt>
 File: ../model/figures/graph_max_min.png Graphic file (type png)
 <use ../model/figures/graph_max_min.png>
-Package pdftex.def Info: ../model/figures/graph_max_min.png  used on input line 447.
+Package pdftex.def Info: ../model/figures/graph_max_min.png  used on input line 461.
 (pdftex.def)             Requested size: 483.69684pt x 362.79062pt.
- [15 <../model/figures/graph.png>] [16 <../model/figures/graph_max_min.png>] [17] [18] [19] [20] [21]
-Overfull \hbox (41.65958pt too wide) in paragraph at lines 517--517
+ [17 <../model/figures/graph.png>] [18 <../model/figures/graph_max_min.png>] [19] [20] [21] [22] [23]
+Overfull \hbox (41.65958pt too wide) in paragraph at lines 528--528
 \OT1/cmr/m/n/12 NR / rdonlyres / Mathematics / 18 -[] 03Spring2004 / B76E6F4F -[] 7B05 -[] 4DA0 -[] A5A5 -[] 03FA4ACCB6B2 /
  []
 
-[22]
-<figs/code/damping.png, id=354, 1457.445pt x 1310.8975pt>
+[24]
+<figs/code/damping.png, id=374, 1457.445pt x 1310.8975pt>
 File: figs/code/damping.png Graphic file (type png)
 <use figs/code/damping.png>
-Package pdftex.def Info: figs/code/damping.png  used on input line 524.
+Package pdftex.def Info: figs/code/damping.png  used on input line 535.
 (pdftex.def)             Requested size: 459.51051pt x 413.29495pt.
- [23 <./figs/code/damping.png>]
-<figs/code/unc.png, id=360, 1543.7675pt x 2358.8125pt>
+ [25 <./figs/code/damping.png>]
+<figs/code/unc.png, id=380, 1543.7675pt x 2358.8125pt>
 File: figs/code/unc.png Graphic file (type png)
 <use figs/code/unc.png>
-Package pdftex.def Info: figs/code/unc.png  used on input line 530.
+Package pdftex.def Info: figs/code/unc.png  used on input line 541.
 (pdftex.def)             Requested size: 362.77263pt x 554.28503pt.
- [24 <./figs/code/unc.png>] (./Xiyu Bao Physics HL Internal Assessment.aux)
+ [26 <./figs/code/unc.png>] (./Xiyu Bao Physics HL Internal Assessment.aux)
 Package rerunfilecheck Info: File `"Xiyu Bao Physics HL Internal Assessment".out' has not changed.
 (rerunfilecheck)             Checksum: 40EECFE2F6213C183B433243C2888BAD;4047.
 Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessment".run.xml'.
@@ -944,18 +944,18 @@ Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessme
 
  ) 
 Here is how much of TeX's memory you used:
- 26879 strings out of 476025
- 530772 string characters out of 5790016
+ 26893 strings out of 476025
+ 530892 string characters out of 5790016
  1876388 words of memory out of 5000000
- 46915 multiletter control sequences out of 15000+600000
+ 46916 multiletter control sequences out of 15000+600000
  521990 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,14n,83p,1086b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (27 pages, 969041 bytes).
+Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (29 pages, 948959 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 485 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 125 named destinations out of 1000 (max. 500000)
  250 words of extra memory for PDF output out of 10000 (max. 10000000)
 
