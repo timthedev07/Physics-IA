@@ -892,4 +892,70 @@ See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                p
+(caption)                particular \caption on input line 229.
+See the caption package documentation for explanation.
+
+[6] [7]
+<figs/setup.png, id=208, 1031.855pt x 482.80376pt>
+File: figs/setup.png Graphic file (type png)
+<use figs/setup.png>
+Package pdftex.def Info: figs/setup.png  used on input line 236.
+(pdftex.def)             Requested size: 386.95894pt x 181.05833pt.
+ [8 <./figs/setup.png>] [9]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 296.
+See the caption package documentation for explanation.
+
+[10] [11] [12] [13] [14] [15]
+<../model/figures/graph.png, id=310, 462.528pt x 346.896pt>
+File: ../model/figures/graph.png Graphic file (type png)
+<use ../model/figures/graph.png>
+Package pdftex.def Info: ../model/figures/graph.png  used on input line 460.
+(pdftex.def)             Requested size: 483.69684pt x 362.79062pt.
+ [16]
+<../model/figures/graph_max_min.png, id=322, 462.528pt x 346.896pt>
+File: ../model/figures/graph_max_min.png Graphic file (type png)
+<use ../model/figures/graph_max_min.png>
+Package pdftex.def Info: ../model/figures/graph_max_min.png  used on input line 461.
+(pdftex.def)             Requested size: 483.69684pt x 362.79062pt.
+ [17 <../model/figures/graph.png>] [18 <../model/figures/graph_max_min.png>] [19] [20] [21] [22] [23]
+Overfull \hbox (41.65958pt too wide) in paragraph at lines 528--528
+\OT1/cmr/m/n/12 NR / rdonlyres / Mathematics / 18 -[] 03Spring2004 / B76E6F4F -[] 7B05 -[] 4DA0 -[] A5A5 -[] 03FA4ACCB6B2 /
+ []
+
+[24]
+<figs/code/damping.png, id=374, 1457.445pt x 1310.8975pt>
+File: figs/code/damping.png Graphic file (type png)
+<use figs/code/damping.png>
+Package pdftex.def Info: figs/code/damping.png  used on input line 535.
+(pdftex.def)             Requested size: 459.51051pt x 413.29495pt.
+ [25 <./figs/code/damping.png>]
+<figs/code/unc.png, id=380, 1543.7675pt x 2358.8125pt>
+File: figs/code/unc.png Graphic file (type png)
+<use figs/code/unc.png>
+Package pdftex.def Info: figs/code/unc.png  used on input line 541.
+(pdftex.def)             Requested size: 362.77263pt x 554.28503pt.
+ [26 <./figs/code/unc.png>] (./Xiyu Bao Physics HL Internal Assessment.aux)
+Package rerunfilecheck Info: File `"Xiyu Bao Physics HL Internal Assessment".out' has not changed.
+(rerunfilecheck)             Checksum: 40EECFE2F6213C183B433243C2888BAD;4047.
+Package logreq Info: Writing requests to '"Xiyu Bao Physics HL Internal Assessment".run.xml'.
+\openout1 = `"Xiyu Bao Physics HL Internal Assessment.run.xml"'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 26893 strings out of 476025
+ 530892 string characters out of 5790016
+ 1876388 words of memory out of 5000000
+ 46916 multiletter control sequences out of 15000+600000
+ 521990 words of font info for 72 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 63i,14n,83p,1086b,5044s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "Xiyu Bao Physics HL Internal Assessment.pdf" (29 pages, 948961 bytes).
+PDF statistics:
+ 485 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 125 named destinations out of 1000 (max. 500000)
+ 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+
